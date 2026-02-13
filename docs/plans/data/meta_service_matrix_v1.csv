@@ -1,0 +1,13 @@
+system_id,service,main_api,state_key,acceptance
+login,AuthService,login/logout,is_logged_in,login_success_signal
+shop,ShopService,purchase/catalog,balance_after,no_currency_block
+card_inventory,InventoryService,add_card/remove_card,card_count,no_negative_count
+chat,ChatService,send_message/get_messages,channel_buffer,max_50_messages
+friend,SocialService,send_friend_request/accept_friend_request,friends_map,no_self_request
+party,SocialService,create_party/add_party_member,party_members,max_4_members
+guild,SocialService,create_guild/add_guild_member,guild_members,max_30_members
+trigger,TriggerService,register_listener/fire,listeners_by_trigger,listener_called
+skill,SkillService,request_cast/set_caster_mana,cooldown_until,cooldown_and_mana_check
+item,InventoryService,grant_item/consume_item,item_count,no_negative_item
+mail,MailService,send_mail/claim_mail,mail_claimed,no_duplicate_claim
+log,LogService,add/get_recent,entry_buffer,max_500_entries

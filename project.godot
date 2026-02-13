@@ -12,6 +12,15 @@ config/features=PackedStringArray("4.5", "Forward Plus")
 [autoload]
 
 EventBus="*res://scripts/autoload/event_bus.gd"
+LogService="*res://scripts/autoload/log_service.gd"
+AuthService="*res://scripts/autoload/auth_service.gd"
+InventoryService="*res://scripts/autoload/inventory_service.gd"
+ShopService="*res://scripts/autoload/shop_service.gd"
+ChatService="*res://scripts/autoload/chat_service.gd"
+SocialService="*res://scripts/autoload/social_service.gd"
+TriggerService="*res://scripts/autoload/trigger_service.gd"
+SkillService="*res://scripts/autoload/skill_service.gd"
+MailService="*res://scripts/autoload/mail_service.gd"
 GameManager="*res://scripts/autoload/game_manager.gd"
 BugReporter="*res://scripts/debug/bug_reporter.gd"
 
