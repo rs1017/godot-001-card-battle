@@ -1,0 +1,33 @@
+Godot Engine v4.5.1.stable.mono.official.f62fdbde1 - https://godotengine.org
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+ERROR: Condition "err != OK" is true.
+   at: initialize (drivers/gles3/shader_gles3.cpp:790)
+OpenGL API 3.3.0 NVIDIA 591.74 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4080 SUPER
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2548)
+[BugReporter] Save dir selected: D:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+[GameManager] State: MAIN_MENU -> MAIN_MENU
