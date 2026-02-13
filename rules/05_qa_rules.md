@@ -1,13 +1,22 @@
-ï»¿# QA ê·œì¹™
+# QA ±ÔÄ¢
 
-## ê¸°ë³¸ ê²€ì¦
-- í—¤ë“œë¦¬ìŠ¤ ìŠ¤ëª¨í¬: `tools\run_headless_smoke.bat`
-- ê¸°ëŠ¥ ì²´í¬: ì…ë ¥/ë§ˆë‚˜/ìŠ¤í°/ìƒíƒœ ì „í™˜/ìŠ¹íŒ¨/ì¼ì‹œì •ì§€
+## ±âº» °ËÁõ
+- Çìµå¸®½º ½º¸ğÅ©: `tools\run_headless_smoke.bat`
+- ±â´É Ã¼Å©: ÀÔ·Â/¸¶³ª/½ºÆù/»óÅÂ ÀüÈ¯/½ÂÆĞ/ÀÏ½ÃÁ¤Áö
 
-## ë¦¬í¬íŠ¸
-- QA ë¬¸ì„œ: `docs/qa/qa_YYYYMMDD_HHMMSS.md`
-- ë²„ê·¸ ìŠ¤í¬ë¦°ìƒ·: `docs/qa/bug_reports/`
-- ì‹¤íŒ¨ ì‹œ ì¬í˜„ ì ˆì°¨ì™€ ë¡œê·¸ë¥¼ í¬í•¨í•œë‹¤.
+## ¸®Æ÷Æ®
+- QA ¹®¼­: `docs/qa/qa_YYYYMMDD_HHMMSS.md`
+- ¹ö±× ½ºÅ©¸°¼¦: `docs/qa/bug_reports/`
+- ½ÇÆĞ ½Ã ÀçÇö ÀıÂ÷¿Í ·Î±×¸¦ Æ÷ÇÔÇÑ´Ù.
 
-## ê²Œì´íŠ¸
-- ìŠ¤ëª¨í¬ PASS ì—†ì´ ì™„ë£Œ ì²˜ë¦¬ ê¸ˆì§€
+## °ÔÀÌÆ®
+- ½º¸ğÅ© PASS ¾øÀÌ ¿Ï·á Ã³¸® ±İÁö
+
+## Bug Send Rule
+- BUG ¹öÆ° Å¬¸¯ ½Ã `¹ö±× º¸³»±â` ¹öÆ°ÀÌ Ç¥½ÃµÇ¾î¾ß ÇÑ´Ù.
+- `¹ö±× º¸³»±â` Å¬¸¯ ½Ã `docs/qa/bug_reports/` ¾Æ·¡¿¡ ½ºÅ©¸°¼¦(.png)°ú ³ëÆ®(.txt)°¡ »ı¼ºµÇ¾î¾ß ÇÑ´Ù.
+- Àü¼Û ½ÇÆĞ ½Ã »ç¿ëÀÚ¿¡°Ô ½ÇÆĞ ¸Ş½ÃÁö°¡ º¸¿©¾ß ÇÏ¸ç QA ½ÇÆĞ·Î Ã³¸®ÇÑ´Ù.
+
+## Runtime Error Log Gate
+- During QA run, check `gamelogs/godot-errors.log`.
+- If new runtime `ERROR:` lines exist, QA is fail until corresponding fixes are verified.

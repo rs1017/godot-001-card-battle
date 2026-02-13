@@ -1,22 +1,31 @@
-ï»¿# ê³µí†µ ìš´ì˜ ê·œì¹™
+# °øÅë ¿î¿µ ±ÔÄ¢
 
-## ë²”ìœ„
-- ë³¸ ê·œì¹™ì€ ê¸°íš/ê°œë°œ/ê·¸ë˜í”½/QA ì „ ë‹¨ê³„ì— ê³µí†µ ì ìš©í•œë‹¤.
+## ¹üÀ§
+- º» ±ÔÄ¢Àº ±âÈ¹/°³¹ß/±×·¡ÇÈ/QA Àü ´Ü°è¿¡ °øÅë Àû¿ëÇÑ´Ù.
 
-## ê¸°ë³¸ ìˆœì„œ
-1. ìš”ì²­ íŒŒì•…
-2. êµ¬í˜„ ë˜ëŠ” ë¬¸ì„œ ì‘ì„±
-3. ê²€ì¦
-4. ê²°ê³¼ ê¸°ë¡
+## ±âº» ¼ø¼­
+1. ¿äÃ» ÆÄ¾Ç
+2. ±¸Çö ¶Ç´Â ¹®¼­ ÀÛ¼º
+3. °ËÁõ
+4. °á°ú ±â·Ï
 
-## ì‚°ì¶œë¬¼ ê²½ë¡œ
-- í™œì„±: `docs/plans`, `docs/plans/data`, `docs/plans/images`, `docs/references`, `docs/reference_reports`, `docs/graphics`, `docs/reviews`, `docs/qa`
-- ì•„ì¹´ì´ë¸Œ: `docs/archive/ralph_runs`
+## »êÃâ¹° °æ·Î
+- È°¼º: `docs/plans`, `docs/plans/data`, `docs/plans/images`, `docs/references`, `docs/reference_reports`, `docs/graphics`, `docs/reviews`, `docs/qa`
+- ¾ÆÄ«ÀÌºê: `docs/archive/ralph_runs`
 
-## ì‹¤í–‰ ê¸°ë³¸ê°’
-- í—¤ë“œë¦¬ìŠ¤ ìŠ¤ëª¨í¬: `tools\run_headless_smoke.bat`
-- ì•ˆì • ì‹¤í–‰: `tools\run_game_stable.bat`
+## ½ÇÇà ±âº»°ª
+- Çìµå¸®½º ½º¸ğÅ©: `tools\run_headless_smoke.bat`
+- ¾ÈÁ¤ ½ÇÇà: `tools\run_game_stable.bat`
 
-## ì´ë¯¸ì§€/ë ˆí¼ëŸ°ìŠ¤
-- ê³„íš ë¬¸ì„œ ë³¸ë¬¸ì— ì™¸ë¶€ ì´ë¯¸ì§€ URL ì§ì ‘ ë§í¬ ê¸ˆì§€
-- ì´ë¯¸ì§€ íŒŒì¼ì€ ë¡œì»¬ ì €ì¥ í›„ ìƒëŒ€ ê²½ë¡œë¡œ ì—°ê²°
+## ÀÌ¹ÌÁö/·¹ÆÛ·±½º
+- °èÈ¹ ¹®¼­ º»¹®¿¡ ¿ÜºÎ ÀÌ¹ÌÁö URL Á÷Á¢ ¸µÅ© ±İÁö
+- ÀÌ¹ÌÁö ÆÄÀÏÀº ·ÎÄÃ ÀúÀå ÈÄ »ó´ë °æ·Î·Î ¿¬°á
+
+## Runtime Log Storage Policy
+- Store runtime logs under `gamelogs/`.
+- Full stream file: `gamelogs/godot-live.log`.
+- Error-only file: `gamelogs/godot-errors.log` (lines beginning with `ERROR:`).
+
+## Runtime Error Fix Policy
+- If runtime `ERROR:` lines are logged, treat them as actionable defects in the same task cycle.
+- Apply code/resource fixes, rerun smoke/run checks, and verify the error line is resolved.
