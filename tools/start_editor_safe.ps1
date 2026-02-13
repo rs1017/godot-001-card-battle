@@ -30,7 +30,6 @@ $args = @("--path", ".")
 if (-not $SkipRecovery) {
 	$targets = @(
 		(Join-Path $repoRoot ".godot\editor"),
-		(Join-Path $repoRoot ".godot\imported"),
 		(Join-Path $repoRoot ".godot\mono")
 	)
 	foreach ($target in $targets) {
