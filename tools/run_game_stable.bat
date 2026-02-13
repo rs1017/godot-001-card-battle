@@ -4,7 +4,7 @@ setlocal
 set "PROJECT_DIR=%~dp0.."
 pushd "%PROJECT_DIR%"
 
-set "EXE=Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64_console.exe"
+set "EXE=Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe"
 if not exist "%EXE%" (
 	echo [FAIL] Missing executable: %EXE%
 	popd
