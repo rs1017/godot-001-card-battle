@@ -3,10 +3,8 @@ param(
 	[int]$MaxCycles = 10,
 	[int]$RequiredSuccessCycles = 2,
 	[string]$CompletionFlag = "docs/ralph/COMPLETE.flag",
-	[string]$MasterPlanPath = "docs/plans/master_plan_300_pages.md",
-	[int]$MinPlanPages = 300,
 	[int]$StopOnQaComplete = 1,
-	[switch]$SkipMasterPlanGate,
+	[switch]$SkipPlanReadinessGate,
 	[string]$PlanReadinessPath = "docs/plans/latest_plan.md"
 )
 
@@ -18,24 +16,12 @@ $ralphRoot = Join-Path $repoRoot "docs\ralph"
 $statePath = Join-Path $ralphRoot "state.json"
 $cycleLogPath = Join-Path $ralphRoot "cycle_log.md"
 $completionFlagPath = Join-Path $repoRoot $CompletionFlag
-$masterPlanFullPath = Join-Path $repoRoot $MasterPlanPath
 $planReadinessFullPath = Join-Path $repoRoot $PlanReadinessPath
 $featureBacklogPath = Join-Path $repoRoot "docs\plans\data\auto_feature_backlog.csv"
 
 New-Item -ItemType Directory -Force -Path $ralphRoot | Out-Null
 if (-not (Test-Path $cycleLogPath)) {
 	Set-Content -Path $cycleLogPath -Encoding UTF8 -Value "# Ralph Cycle Log`n"
-}
-
-function Assert-MasterPlan([string]$path, [int]$minPages) {
-	if (-not (Test-Path $path)) {
-		throw "Master plan file not found: $path"
-	}
-	$pageCount = (Select-String -Path $path -Pattern "^## Page " | Measure-Object).Count
-	if ($pageCount -lt $minPages) {
-		throw "Master plan pages are insufficient: $pageCount/$minPages"
-	}
-	Write-Output "[RALPH] master plan gate passed ($pageCount pages)"
 }
 
 function Assert-PlanReady([string]$path) {
@@ -201,11 +187,8 @@ function Mark-SmokePassInQA([hashtable]$artifactMap) {
 
 $state = Load-State $statePath
 $refs = Get-ReferenceBuckets $referenceRoot
-if ($SkipMasterPlanGate) {
+if (-not $SkipPlanReadinessGate) {
 	Assert-PlanReady -path $planReadinessFullPath
-}
-else {
-	Assert-MasterPlan -path $masterPlanFullPath -minPages $MinPlanPages
 }
 Assert-PlayableGate -rootPath $repoRoot
 

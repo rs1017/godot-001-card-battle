@@ -1,6 +1,6 @@
-param(
+﻿param(
 	[int]$PageCount = 320,
-	[string]$OutputPath = "docs/plans/master_plan_300_pages.md",
+	[string]$OutputPath = "docs/plans/master_plan_generated.md",
 	[string]$ReferencePath = "docs/references/web_reference_pack.md",
 	[string]$ImagesDir = "docs/plans/images",
 	[string]$DataCsvPath = "docs/plans/data/master_plan_pages.csv"
@@ -26,24 +26,24 @@ if (-not (Test-Path $dataCsvDir)) {
 	New-Item -ItemType Directory -Force -Path $dataCsvDir | Out-Null
 }
 
-$referenceNote = "- 웹 레퍼런스: $ReferencePath"
+$referenceNote = "- ???덊띁?곗뒪: $ReferencePath"
 if (-not (Test-Path (Join-Path $repoRoot $ReferencePath))) {
-	$referenceNote = "- 웹 레퍼런스: (미확인)"
+	$referenceNote = "- ???덊띁?곗뒪: (誘명솗??"
 }
 
 $sections = @(
-	"메인 페이지 UX (ComfyUI 우선)",
-	"로비 및 맵 가독성",
-	"전투 루프",
-	"승리 및 패배 흐름",
-	"애니메이션 연출",
-	"카드 덱 구성 규칙",
-	"카드 룰 시스템",
-	"전투 공식",
-	"카드 인벤토리",
-	"캐릭터 설정/설명",
-	"QA 시나리오",
-	"라이브 밸런싱"
+	"硫붿씤 ?섏씠吏 UX (ComfyUI ?곗꽑)",
+	"濡쒕퉬 諛?留?媛?낆꽦",
+	"?꾪닾 猷⑦봽",
+	"?밸━ 諛??⑤같 ?먮쫫",
+	"?좊땲硫붿씠???곗텧",
+	"移대뱶 ??援ъ꽦 洹쒖튃",
+	"移대뱶 猷??쒖뒪??,
+	"?꾪닾 怨듭떇",
+	"移대뱶 ?몃깽?좊━",
+	"罹먮┃???ㅼ젙/?ㅻ챸",
+	"QA ?쒕굹由ъ삤",
+	"?쇱씠釉?諛몃윴??
 )
 
 $referenceImages = @(
@@ -65,40 +65,40 @@ $doc = New-Object System.Collections.Generic.List[string]
 $csvRows = New-Object System.Collections.Generic.List[string]
 
 $generatedAt = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-$doc.Add("# 마스터 기획서 (300+ 페이지)")
+$doc.Add("# 留덉뒪??湲고쉷??(300+ ?섏씠吏)")
 $doc.Add("")
-$doc.Add("## 문서 성격")
-$doc.Add("- 본 문서는 게임 기획서이며, 텍스트 단독 기술을 금지한다")
-$doc.Add("- 모든 페이지는 이미지, 표, 흐름도, UI 제안을 포함한다")
+$doc.Add("## 臾몄꽌 ?깃꺽")
+$doc.Add("- 蹂?臾몄꽌??寃뚯엫 湲고쉷?쒖씠硫? ?띿뒪???⑤룆 湲곗닠??湲덉??쒕떎")
+$doc.Add("- 紐⑤뱺 ?섏씠吏???대?吏, ?? ?먮쫫?? UI ?쒖븞???ы븿?쒕떎")
 $doc.Add("")
-$doc.Add("## 목차")
-$doc.Add("1. 개요")
-$doc.Add("2. 목적")
-$doc.Add("3. 문서범위")
-$doc.Add("4. 이력")
-$doc.Add("5. 페이지별 상세 설계")
+$doc.Add("## 紐⑹감")
+$doc.Add("1. 媛쒖슂")
+$doc.Add("2. 紐⑹쟻")
+$doc.Add("3. 臾몄꽌踰붿쐞")
+$doc.Add("4. ?대젰")
+$doc.Add("5. ?섏씠吏蹂??곸꽭 ?ㅺ퀎")
 $doc.Add("")
-$doc.Add("## 개요")
-$doc.Add("- reference/docs 형식을 참고한 통합 기획 문서")
+$doc.Add("## 媛쒖슂")
+$doc.Add("- docs/references ?뺤떇??李멸퀬???듯빀 湲고쉷 臾몄꽌")
 $doc.Add("")
-$doc.Add("## 목적")
-$doc.Add("- 카드 덱/룰/전투공식/맵/승패/애니메이션/인벤토리/캐릭터 설계와 개발요구사항을 연결")
+$doc.Add("## 紐⑹쟻")
+$doc.Add("- 移대뱶 ??猷??꾪닾怨듭떇/留??뱁뙣/?좊땲硫붿씠???몃깽?좊━/罹먮┃???ㅺ퀎? 媛쒕컻?붽뎄?ы빆???곌껐")
 $doc.Add("")
-$doc.Add("## 문서범위")
-$doc.Add("- 메인 페이지, 전투 맵, 카드 UX, 승패 연출, QA 루프, 밸런싱")
+$doc.Add("## 臾몄꽌踰붿쐞")
+$doc.Add("- 硫붿씤 ?섏씠吏, ?꾪닾 留? 移대뱶 UX, ?뱁뙣 ?곗텧, QA 猷⑦봽, 諛몃윴??)
 $doc.Add("")
-$doc.Add("## 이력")
-$doc.Add("| 날짜 | 작성자 | 변경 내용 |")
+$doc.Add("## ?대젰")
+$doc.Add("| ?좎쭨 | ?묒꽦??| 蹂寃??댁슜 |")
 $doc.Add("|---|---|---|")
-$doc.Add("| 2026-02-13 | Ralph Agent | 이미지/표/흐름/UI 포함 300+ 페이지 생성 |")
+$doc.Add("| 2026-02-13 | Ralph Agent | ?대?吏/???먮쫫/UI ?ы븿 300+ ?섏씠吏 ?앹꽦 |")
 $doc.Add("")
-$doc.Add("- 생성시각: $generatedAt")
-$doc.Add("- 정책: 300페이지 이상 기획서가 없으면 개발 시작 금지")
-$doc.Add("- 목표 페이지 수: $PageCount")
-$doc.Add("- 워크플로우: 레퍼런스 -> 기획 -> 그래픽(ComfyUI/KayKit) -> 개발 -> 리뷰 -> QA")
+$doc.Add("- ?앹꽦?쒓컖: $generatedAt")
+$doc.Add("- ?뺤콉: 300?섏씠吏 ?댁긽 湲고쉷?쒓? ?놁쑝硫?媛쒕컻 ?쒖옉 湲덉?")
+$doc.Add("- 紐⑺몴 ?섏씠吏 ?? $PageCount")
+$doc.Add("- ?뚰겕?뚮줈?? ?덊띁?곗뒪 -> 湲고쉷 -> 洹몃옒??ComfyUI/KayKit) -> 媛쒕컻 -> 由щ럭 -> QA")
 $doc.Add($referenceNote)
-$doc.Add("- 이미지 폴더: $ImagesDir")
-$doc.Add("- 기획 데이터 CSV: $DataCsvPath")
+$doc.Add("- ?대?吏 ?대뜑: $ImagesDir")
+$doc.Add("- 湲고쉷 ?곗씠??CSV: $DataCsvPath")
 $doc.Add("")
 
 $csvRows.Add("page,theme,dev_need,ui_focus,formula_focus,image_a,image_b")
@@ -111,43 +111,43 @@ for ($i = 1; $i -le $PageCount; $i++) {
 
 	$doc.Add("## Page $i")
 	$doc.Add("")
-	$doc.Add("### 페이지 주제")
+	$doc.Add("### ?섏씠吏 二쇱젣")
 	$doc.Add("- $topic")
 	$doc.Add("")
-	$doc.Add("### 레퍼런스 체크 이미지")
-	$doc.Add("![레퍼런스 A]($imgA)")
-	$doc.Add("![레퍼런스 B]($imgB)")
-	$doc.Add("![그래퍼 결과 슬롯]($imageRelPath)")
+	$doc.Add("### ?덊띁?곗뒪 泥댄겕 ?대?吏")
+	$doc.Add("![?덊띁?곗뒪 A]($imgA)")
+	$doc.Add("![?덊띁?곗뒪 B]($imgB)")
+	$doc.Add("![洹몃옒??寃곌낵 ?щ’]($imageRelPath)")
 	$doc.Add("")
-	$doc.Add("### 핵심 기획 표")
-	$doc.Add("| 항목 | 기획 내용 | 개발 필요사항 |")
+	$doc.Add("### ?듭떖 湲고쉷 ??)
+	$doc.Add("| ??ぉ | 湲고쉷 ?댁슜 | 媛쒕컻 ?꾩슂?ы빆 |")
 	$doc.Add("|---|---|---|")
-	$doc.Add("| 목표 | 체감이 분명한 전투/UX 개선 | 상태머신, 전투공식, UI 이벤트 연동 구현 |")
-	$doc.Add("| 카드 룰 | 코스트/역할/카운터 관계 유지 | 카드 데이터 검증기, 덱 구성 제약 로직 |")
-	$doc.Add("| 전투 공식 | 기본 피해량 + 오버타임/서든데스 스케일 | 서버/클라 동일 수식 적용 |")
-	$doc.Add("| 승패 연출 | 승리/패배 전환 즉시 인지 | 결과 패널, 애니메이션, 사운드 큐 |")
-	$doc.Add("| QA 재미도 | pace/variety/combo/counterplay 점검 | QA 설문 + 로그 기반 스코어 산출 |")
+	$doc.Add("| 紐⑺몴 | 泥닿컧??遺꾨챸???꾪닾/UX 媛쒖꽑 | ?곹깭癒몄떊, ?꾪닾怨듭떇, UI ?대깽???곕룞 援ы쁽 |")
+	$doc.Add("| 移대뱶 猷?| 肄붿뒪????븷/移댁슫??愿怨??좎? | 移대뱶 ?곗씠??寃利앷린, ??援ъ꽦 ?쒖빟 濡쒖쭅 |")
+	$doc.Add("| ?꾪닾 怨듭떇 | 湲곕낯 ?쇳빐??+ ?ㅻ쾭????쒕뱺?곗뒪 ?ㅼ???| ?쒕쾭/?대씪 ?숈씪 ?섏떇 ?곸슜 |")
+	$doc.Add("| ?뱁뙣 ?곗텧 | ?밸━/?⑤같 ?꾪솚 利됱떆 ?몄? | 寃곌낵 ?⑤꼸, ?좊땲硫붿씠?? ?ъ슫????|")
+	$doc.Add("| QA ?щ???| pace/variety/combo/counterplay ?먭? | QA ?ㅻЦ + 濡쒓렇 湲곕컲 ?ㅼ퐫???곗텧 |")
 	$doc.Add("")
-	$doc.Add("### 흐름도 (Markdown Mermaid)")
+	$doc.Add("### ?먮쫫??(Markdown Mermaid)")
 	$doc.Add('~~~mermaid')
 	$doc.Add("flowchart LR")
-	$doc.Add("A[레퍼런스 분석] --> B[기획 정리]")
-	$doc.Add("B --> C[UI 와이어 설계]")
-	$doc.Add("C --> D[카드 룰/전투 공식]")
-	$doc.Add("D --> E[구현]")
-	$doc.Add("E --> F[리뷰 에이전트]")
-	$doc.Add("F --> G{QA 통과?}")
-	$doc.Add("G -- 아니오 --> A")
-	$doc.Add("G -- 예 --> H[완료]")
+	$doc.Add("A[?덊띁?곗뒪 遺꾩꽍] --> B[湲고쉷 ?뺣━]")
+	$doc.Add("B --> C[UI ??댁뼱 ?ㅺ퀎]")
+	$doc.Add("C --> D[移대뱶 猷??꾪닾 怨듭떇]")
+	$doc.Add("D --> E[援ы쁽]")
+	$doc.Add("E --> F[由щ럭 ?먯씠?꾪듃]")
+	$doc.Add("F --> G{QA ?듦낵?}")
+	$doc.Add("G -- ?꾨땲??--> A")
+	$doc.Add("G -- ??--> H[?꾨즺]")
 	$doc.Add('~~~')
 	$doc.Add("")
-	$doc.Add("### UI 제안 (Markdown)")
-	$doc.Add("| UI 구역 | 구성 요소 | 상호작용 |")
+	$doc.Add("### UI ?쒖븞 (Markdown)")
+	$doc.Add("| UI 援ъ뿭 | 援ъ꽦 ?붿냼 | ?곹샇?묒슜 |")
 	$doc.Add("|---|---|---|")
-	$doc.Add("| 상단바 | 타워 HP, 페이즈 타이머 | 실시간 수치 업데이트 |")
-	$doc.Add("| 중앙 전장 | 좌/우 레인, 타워, 미니언 | 카드 배치 결과 시각화 |")
-	$doc.Add("| 하단 카드핸드 | 4장 핸드, 다음 카드 프리뷰, 마나바 | 선택/취소/레인 선택 |")
-	$doc.Add("| 결과 오버레이 | 승리/패배, 재시작, 메뉴 | 게임 종료 후 전환 |")
+	$doc.Add("| ?곷떒諛?| ???HP, ?섏씠利???대㉧ | ?ㅼ떆媛??섏튂 ?낅뜲?댄듃 |")
+	$doc.Add("| 以묒븰 ?꾩옣 | 醫????덉씤, ??? 誘몃땲??| 移대뱶 諛곗튂 寃곌낵 ?쒓컖??|")
+	$doc.Add("| ?섎떒 移대뱶?몃뱶 | 4???몃뱶, ?ㅼ쓬 移대뱶 ?꾨━酉? 留덈굹諛?| ?좏깮/痍⑥냼/?덉씤 ?좏깮 |")
+	$doc.Add("| 寃곌낵 ?ㅻ쾭?덉씠 | ?밸━/?⑤같, ?ъ떆?? 硫붾돱 | 寃뚯엫 醫낅즺 ???꾪솚 |")
 	$doc.Add("")
 	$doc.Add('~~~text')
 	$doc.Add("+----------------------------------------------------+")
@@ -160,14 +160,14 @@ for ($i = 1; $i -le $PageCount; $i++) {
 	$doc.Add("+----------------------------------------------------+")
 	$doc.Add('~~~')
 	$doc.Add("")
-	$doc.Add("### 개발 제안")
-	$doc.Add("1. 레퍼런스 이미지 기반으로 맵 가독성 기준선을 먼저 고정한다")
-	$doc.Add("2. 카드 룰/전투 공식 수치를 CSV 단일 소스로 관리한다")
-	$doc.Add("3. UI 이벤트(선택/취소/승패)를 상태머신과 연결해 회귀를 줄인다")
-	$doc.Add("4. 리뷰 반려 시 즉시 레퍼런스 재수집 후 기획 diff를 기록한다")
+	$doc.Add("### 媛쒕컻 ?쒖븞")
+	$doc.Add("1. ?덊띁?곗뒪 ?대?吏 湲곕컲?쇰줈 留?媛?낆꽦 湲곗??좎쓣 癒쇱? 怨좎젙?쒕떎")
+	$doc.Add("2. 移대뱶 猷??꾪닾 怨듭떇 ?섏튂瑜?CSV ?⑥씪 ?뚯뒪濡?愿由ы븳??)
+	$doc.Add("3. UI ?대깽???좏깮/痍⑥냼/?뱁뙣)瑜??곹깭癒몄떊怨??곌껐???뚭?瑜?以꾩씤??)
+	$doc.Add("4. 由щ럭 諛섎젮 ??利됱떆 ?덊띁?곗뒪 ?ъ닔吏???湲고쉷 diff瑜?湲곕줉?쒕떎")
 	$doc.Add("")
 
-	$csvRows.Add(("{0},""{1}"",""상태머신/전투공식/UI연동"",""메인+전투+결과 오버레이"",""오버타임/서든데스"",""{2}"",""{3}""" -f $i, $topic, $imgA, $imgB))
+	$csvRows.Add(("{0},""{1}"",""?곹깭癒몄떊/?꾪닾怨듭떇/UI?곕룞"",""硫붿씤+?꾪닾+寃곌낵 ?ㅻ쾭?덉씠"",""?ㅻ쾭????쒕뱺?곗뒪"",""{2}"",""{3}""" -f $i, $topic, $imgA, $imgB))
 }
 
 Set-Content -Path $fullOutputPath -Value ($doc -join "`r`n") -Encoding UTF8
@@ -176,6 +176,7 @@ Set-Content -Path $dataCsvFullPath -Value ($csvRows -join "`r`n") -Encoding UTF8
 Write-Output "MASTER_PLAN_PATH=$fullOutputPath"
 Write-Output "MASTER_PLAN_PAGES=$PageCount"
 Write-Output "MASTER_PLAN_CSV=$dataCsvFullPath"
+
 
 
 

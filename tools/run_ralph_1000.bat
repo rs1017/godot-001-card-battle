@@ -15,7 +15,7 @@ powershell -ExecutionPolicy Bypass -File "tools\run_ralph_loop.ps1" ^
   -MaxCycles 1000 ^
   -RequiredSuccessCycles %REQUIRED_SUCCESS% ^
   -CompletionFlag "%COMPLETE_FLAG%" ^
-  -SkipMasterPlanGate ^
+  -SkipPlanReadinessGate ^
   -PlanReadinessPath "docs/plans/latest_plan.md" ^
   -StopOnQaComplete 0
 

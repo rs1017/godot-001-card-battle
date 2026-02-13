@@ -1,4 +1,4 @@
-param(
+﻿param(
 	[string]$Feature = "baseline-workflow",
 	[string]$ReferenceFocus = "global",
 	[int]$CycleId = 1,
@@ -137,33 +137,33 @@ $planBody = @"
 - ReferenceFocus: $ReferenceFocus
 - SourceInventory: $([IO.Path]::GetFileName($inventoryPath))
 
-## 목차
-- 개요
-- 목적
-- 문서범위
-- 카드 덱 구성 규칙
-- 카드 룰
-- 전투 공식
-- 맵/레인 설계
-- 승리/패배/애니메이션
-- 카드 인벤토리
-- 캐릭터 설명
-- QA(재미도 포함)
+## 紐⑹감
+- 媛쒖슂
+- 紐⑹쟻
+- 臾몄꽌踰붿쐞
+- 移대뱶 ??援ъ꽦 洹쒖튃
+- 移대뱶 猷?
+- ?꾪닾 怨듭떇
+- 留??덉씤 ?ㅺ퀎
+- ?밸━/?⑤같/?좊땲硫붿씠??
+- 移대뱶 ?몃깽?좊━
+- 罹먮┃???ㅻ챸
+- QA(?щ????ы븿)
 
-## 개요
-- Reference 기반 배틀 개선 사이클 문서.
+## 媛쒖슂
+- Reference 湲곕컲 諛고? 媛쒖꽑 ?ъ씠??臾몄꽌.
 - Reference image link: `images/cycle_$CycleId` (image files are managed by grapher output).
 
-## 목적
-- 카드 전투의 pace, variety, combo, counterplay 재미를 높이고, 규칙/수치/UX를 일관되게 정의.
+## 紐⑹쟻
+- 移대뱶 ?꾪닾??pace, variety, combo, counterplay ?щ?瑜??믪씠怨? 洹쒖튃/?섏튂/UX瑜??쇨??섍쾶 ?뺤쓽.
 
-## 문서범위
-- 메인 페이지부터 전투 종료까지의 전체 흐름.
+## 臾몄꽌踰붿쐞
+- 硫붿씤 ?섏씠吏遺???꾪닾 醫낅즺源뚯????꾩껜 ?먮쫫.
 - Planning data csv: `data/$([IO.Path]::GetFileName($planDataPath))`
 
 ## Phase 1. Reference Collection
 - Use `reference/`, `resources/cards`, and `assets/kaykit` as the primary references.
-- Record inventory and keep diffs in `reference/_reports`.
+- Record inventory and keep diffs in `docs/reference_reports`.
 
 ## Phase 2. Planning and Distribution
 - Publish the current execution plan as `docs/plans/latest_plan.md`.
@@ -297,3 +297,4 @@ Write-Output "GRAPHICS=$graphicsPath"
 Write-Output "DEVELOPMENT_LOG=$devLogPath"
 Write-Output "REVIEW=$reviewPath"
 Write-Output "QA=$qaPath"
+

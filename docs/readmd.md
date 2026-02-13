@@ -1,4 +1,4 @@
-# docs Folder Guide
+﻿# docs Folder Guide
 
 ## Overview
 - This folder stores planning, reference, review, and QA outputs used by the Ralph workflow.
@@ -8,7 +8,6 @@
 ## Folders
 - `docs/plans/`
   - Main planning documents (`.md`)
-  - Current master plan: `docs/plans/master_plan_300_pages.md`
   - Latest cycle plan: `docs/plans/latest_plan.md`
 - `docs/plans/data/`
   - Structured planning datasets (`.csv`)
@@ -48,3 +47,4 @@
 ## Notes
 - If a review is rejected, refresh references and regenerate planning artifacts before continuing.
 - For screenshot references, prefer gameplay-context images and keep chunked/batched folder organization.
+

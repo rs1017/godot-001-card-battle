@@ -21,9 +21,9 @@
 - reference\minion-masters\screenshot_06_ss_06fa2fc78e91876b638fba5262a892d04fb06032.jpg
 - reference\minion-masters\screenshot_07_ss_759e6021df563722cc938823e74624253b8cf2bc.jpg
 - reference\minion-masters\screenshot_08_ss_1101dea05326bfc5ed7fec4bb87c2c1f7d50ad34.jpg
-- reference\_reports\reference_inventory_20260213_134711.md
-- reference\_reports\reference_inventory_20260213_134712.md
-- reference\_reports\reference_inventory_20260213_134713.md
+- docs/reference_reports/reference_inventory_20260213_134711.md
+- docs/reference_reports/reference_inventory_20260213_134712.md
+- docs/reference_reports/reference_inventory_20260213_134713.md
 
 ## KayKit Sample
 - assets\kaykit\adventurers\Barbarian.glb
@@ -60,3 +60,4 @@
 - resources\cards\skeleton_minion.tres
 - resources\cards\skeleton_rogue.tres
 - resources\cards\skeleton_warrior.tres
+

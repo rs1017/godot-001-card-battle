@@ -1,27 +1,27 @@
-# Graphics Rules
+﻿# Graphics Rules
 
 ## 1. Production Path
-1. 기본 그래픽 생산 경로는 ComfyUI 우선, KayKit 보완 순서다.
-2. ComfyUI 호출은 API 방식(`http://127.0.0.1:8188`)을 기본으로 사용한다.
-3. ComfyUI 루트 경로는 `D:\comfyUI`를 기준으로 한다.
+1. 湲곕낯 洹몃옒???앹궛 寃쎈줈??ComfyUI ?곗꽑, KayKit 蹂댁셿 ?쒖꽌??
+2. ComfyUI ?몄텧? API 諛⑹떇(`http://127.0.0.1:8188`)??湲곕낯?쇰줈 ?ъ슜?쒕떎.
+3. ComfyUI 猷⑦듃 寃쎈줈??`D:\comfyUI`瑜?湲곗??쇰줈 ?쒕떎.
 
 ## 2. Asset Structure Rules
-1. 에셋은 `원본(source)`, `가공(work)`, `적용(runtime)` 상태를 구분해 관리한다.
-2. 적용 에셋은 프로젝트 폴더 구조와 충돌하지 않게 도메인별 하위 폴더를 사용한다.
-3. 파일명은 의미 단위(`category_theme_variant`)로 고정한다.
+1. ?먯뀑? `?먮낯(source)`, `媛怨?work)`, `?곸슜(runtime)` ?곹깭瑜?援щ텇??愿由ы븳??
+2. ?곸슜 ?먯뀑? ?꾨줈?앺듃 ?대뜑 援ъ“? 異⑸룎?섏? ?딄쾶 ?꾨찓?몃퀎 ?섏쐞 ?대뜑瑜??ъ슜?쒕떎.
+3. ?뚯씪紐낆? ?섎? ?⑥쐞(`category_theme_variant`)濡?怨좎젙?쒕떎.
 
 ## 3. Reference Rules
-1. 레퍼런스는 웹 검증 후 `docs/references/web_reference_pack.md`에 기록한다.
-2. 계획 문서에는 외부 이미지 URL을 직접 넣지 않는다.
-3. 참조 이미지는 로컬 다운로드 후 `docs/plans/images/` 하위에 저장한다.
-4. 스크린샷은 배치 폴더와 해시 기반 중복 제거를 강제한다.
+1. ?덊띁?곗뒪????寃利???`docs/references/web_reference_pack.md`??湲곕줉?쒕떎.
+2. 怨꾪쉷 臾몄꽌?먮뒗 ?몃? ?대?吏 URL??吏곸젒 ?ｌ? ?딅뒗??
+3. 李몄“ ?대?吏??濡쒖뺄 ?ㅼ슫濡쒕뱶 ??`docs/plans/images/` ?섏쐞????ν븳??
+4. ?ㅽ겕由곗꺑? 諛곗튂 ?대뜑? ?댁떆 湲곕컲 以묐났 ?쒓굅瑜?媛뺤젣?쒕떎.
 
 ## 4. Request and Review Rules
-1. 그래픽 요청서는 `tools/create_comfyui_image_requests.ps1`로 생성한다.
-2. 산출물마다 프롬프트, 시드, 모델/노드 버전을 기록한다.
-3. 시각 변경은 전/후 비교 캡처를 함께 남긴다.
+1. 洹몃옒???붿껌?쒕뒗 `tools/create_comfyui_image_requests.ps1`濡??앹꽦?쒕떎.
+2. ?곗텧臾쇰쭏???꾨＼?꾪듃, ?쒕뱶, 紐⑤뜽/?몃뱶 踰꾩쟾??湲곕줉?쒕떎.
+3. ?쒓컖 蹂寃쎌? ????鍮꾧탳 罹≪쿂瑜??④퍡 ?④릿??
 
 ## 5. Integration Rules
-1. 카드/유닛/맵 리소스 매핑표(`docs/plans/data/*.csv`)를 업데이트한다.
-2. 모델 경로는 `res://` 기준으로 일치해야 한다.
-3. 누락/깨진 참조가 있으면 QA 단계로 넘기지 않는다.
+1. 移대뱶/?좊떅/留?由ъ냼??留ㅽ븨??`docs/plans/data/*.csv`)瑜??낅뜲?댄듃?쒕떎.
+2. 紐⑤뜽 寃쎈줈??`res://` 湲곗??쇰줈 ?쇱튂?댁빞 ?쒕떎.
+3. ?꾨씫/源⑥쭊 李몄“媛 ?덉쑝硫?QA ?④퀎濡??섍린吏 ?딅뒗??
