@@ -28,7 +28,9 @@ var _badge_map: Dictionary = {}  # number -> description
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
-	_ensure_save_dir()
+	if not _ensure_save_dir():
+		push_warning("[BugReporter] Disabled: no writable save directory")
+		return
 	_build_ui()
 
 
@@ -538,9 +540,9 @@ func _save_crop(rect: Rect2i) -> String:
 	return path
 
 
-func _ensure_save_dir() -> void:
+func _ensure_save_dir() -> bool:
 	_resolved_save_dir = SAVE_DIR_USER
-	var candidates: Array[String] = [SAVE_DIR_USER, SAVE_DIR_PROJECT]
+	var candidates: Array[String] = [SAVE_DIR_PROJECT, SAVE_DIR_USER]
 	for candidate in candidates:
 		var abs_dir: String = ProjectSettings.globalize_path(candidate)
 		var mk_err: Error = DirAccess.make_dir_recursive_absolute(abs_dir)
@@ -554,9 +556,10 @@ func _ensure_save_dir() -> void:
 			DirAccess.remove_absolute(probe_path)
 			_resolved_save_dir = candidate
 			print("[BugReporter] Save dir selected: %s" % abs_dir)
-			return
+			return true
 
 	push_error("[BugReporter] No writable save directory found. Tried user:// and res://docs/qa/bug_reports")
+	return false
 
 
 # === 크롭 기능 ===
