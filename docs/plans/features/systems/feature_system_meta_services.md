@@ -54,10 +54,11 @@
 - `scripts/autoload/social_service.gd`
 - `scripts/autoload/trigger_service.gd`
 - `scripts/autoload/skill_service.gd`
-- `scripts/autoload/mail_service.gd`
+- `scripts/autoload/mail_service.gd`r`n- `scripts/autoload/meta_persistence_service.gd`
 
 ## 7. 검수 기준
 - 로그인 -> 상점 구매 -> 인벤 증가 흐름 100회 호출 시 실패율 0%.
 - 우편 첨부 보상 중복 수령 시도 100회에서 중복 지급 0건.
 - 트리거 발화 1000회에서 등록 리스너 누락 호출 0건.
 - 채팅 메시지 1000건 입력 후 채널 보관 메시지 수가 최대치(50)로 유지.
+

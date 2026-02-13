@@ -38,3 +38,13 @@ func get_messages(channel_id: String) -> Array:
 	if not _channels.has(channel_id):
 		return []
 	return (_channels[channel_id] as Array).duplicate(true)
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"channels": _channels.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_channels = state.get("channels", {}).duplicate(true)

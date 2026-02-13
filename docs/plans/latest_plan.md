@@ -20,7 +20,8 @@
   - `docs/plans/features/systems/feature_system_meta_services.md`
   - 범위: 로그인, 상점, 카드 인벤, 채팅, 친구/파티/길드, 트리거, 스킬, 아이템, 우편, 로그
   - UI: `docs/plans/features/ui/feature_ui_meta_lobby.md`
-  - UI 데이터: `docs/plans/data/ui_meta_lobby_components_v1.csv`
+  - UI 데이터: `docs/plans/data/ui_meta_lobby_components_v2.csv`
+  - 영속화: `scripts/autoload/meta_persistence_service.gd` (`user://meta_state_v1.json`)
 - 제외:
   - BM 상점 실구매
   - 시즌 패스 진행

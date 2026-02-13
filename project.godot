@@ -21,6 +21,7 @@ SocialService="*res://scripts/autoload/social_service.gd"
 TriggerService="*res://scripts/autoload/trigger_service.gd"
 SkillService="*res://scripts/autoload/skill_service.gd"
 MailService="*res://scripts/autoload/mail_service.gd"
+MetaPersistenceService="*res://scripts/autoload/meta_persistence_service.gd"
 GameManager="*res://scripts/autoload/game_manager.gd"
 BugReporter="*res://scripts/debug/bug_reporter.gd"
 

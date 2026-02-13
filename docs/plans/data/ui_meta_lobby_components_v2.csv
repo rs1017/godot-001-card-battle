@@ -1,0 +1,16 @@
+component_id,scene_path,node_path,type,event,service
+META-USER-ID,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/UserIdInput,LineEdit,input,AuthService
+META-PASSWORD,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/PasswordInput,LineEdit,input,AuthService
+META-LOGIN,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/LoginButton,Button,pressed,AuthService
+META-SAVE,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/SaveDataButton,Button,pressed,MetaPersistenceService
+META-LOAD,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/LoadDataButton,Button,pressed,MetaPersistenceService
+META-BUY-STARTER,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/EconomyTab/EconomyRow/BuyStarterButton,Button,pressed,ShopService
+META-REFRESH,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/EconomyTab/EconomyRow/RefreshSnapshotButton,Button,pressed,InventoryService
+META-SEND-CHAT,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/SocialTab/SocialRow1/SendGlobalChatButton,Button,pressed,ChatService
+META-ADD-FRIEND,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/SocialTab/SocialRow1/AddFriendButton,Button,pressed,SocialService
+META-CREATE-PARTY,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/SocialTab/SocialRow2/CreatePartyButton,Button,pressed,SocialService
+META-CREATE-GUILD,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/SocialTab/SocialRow2/CreateGuildButton,Button,pressed,SocialService
+META-SEND-MAIL,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/LiveOpsTab/LiveOpsRow/SendMailButton,Button,pressed,MailService
+META-CLAIM-MAIL,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/LiveOpsTab/LiveOpsRow/ClaimMailButton,Button,pressed,MailService
+META-CAST-SKILL,res://scenes/ui/meta_lobby.tscn,Margin/Root/Tabs/CombatTab/CombatRow/CastSkillButton,Button,pressed,SkillService
+META-OUTPUT,res://scenes/ui/meta_lobby.tscn,Margin/Root/OutputPanel/OutputLog,RichTextLabel,append,LogService

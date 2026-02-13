@@ -67,3 +67,15 @@ func grant_currency(currency: String, amount: int) -> void:
 		return
 	var wallet: Dictionary = _profiles[_active_user_id]["wallet"]
 	wallet[currency] = int(wallet.get(currency, 0)) + amount
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"active_user_id": _active_user_id,
+		"profiles": _profiles.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_active_user_id = String(state.get("active_user_id", ""))
+	_profiles = state.get("profiles", {}).duplicate(true)

@@ -64,3 +64,15 @@ func get_card_snapshot() -> Dictionary:
 
 func get_item_snapshot() -> Dictionary:
 	return _item_inventory.duplicate(true)
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"card_inventory": _card_inventory.duplicate(true),
+		"item_inventory": _item_inventory.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_card_inventory = state.get("card_inventory", {}).duplicate(true)
+	_item_inventory = state.get("item_inventory", {}).duplicate(true)

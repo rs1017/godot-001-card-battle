@@ -55,61 +55,109 @@ text = "guest"
 layout_mode = 2
 text = "Login"
 
+[node name="SaveDataButton" type="Button" parent="Margin/Root/TopRow"]
+layout_mode = 2
+text = "Save"
+
+[node name="LoadDataButton" type="Button" parent="Margin/Root/TopRow"]
+layout_mode = 2
+text = "Load"
+
 [node name="BackButton" type="Button" parent="Margin/Root/TopRow"]
 layout_mode = 2
 text = "Back"
 
-[node name="ActionRows" type="VBoxContainer" parent="Margin/Root"]
+[node name="Tabs" type="TabContainer" parent="Margin/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EconomyTab" type="VBoxContainer" parent="Margin/Root/Tabs"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="Row1" type="HBoxContainer" parent="Margin/Root/ActionRows"]
+[node name="EconomyInfo" type="Label" parent="Margin/Root/Tabs/EconomyTab"]
+layout_mode = 2
+text = "Shop / Inventory"
+
+[node name="EconomyRow" type="HBoxContainer" parent="Margin/Root/Tabs/EconomyTab"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="BuyStarterButton" type="Button" parent="Margin/Root/ActionRows/Row1"]
+[node name="BuyStarterButton" type="Button" parent="Margin/Root/Tabs/EconomyTab/EconomyRow"]
 layout_mode = 2
 text = "Buy Starter"
 
-[node name="SendGlobalChatButton" type="Button" parent="Margin/Root/ActionRows/Row1"]
+[node name="RefreshSnapshotButton" type="Button" parent="Margin/Root/Tabs/EconomyTab/EconomyRow"]
+layout_mode = 2
+text = "Refresh Snapshot"
+
+[node name="SocialTab" type="VBoxContainer" parent="Margin/Root/Tabs"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SocialInfo" type="Label" parent="Margin/Root/Tabs/SocialTab"]
+layout_mode = 2
+text = "Chat / Friend / Party / Guild"
+
+[node name="SocialRow1" type="HBoxContainer" parent="Margin/Root/Tabs/SocialTab"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SendGlobalChatButton" type="Button" parent="Margin/Root/Tabs/SocialTab/SocialRow1"]
 layout_mode = 2
 text = "Send Chat"
 
-[node name="AddFriendButton" type="Button" parent="Margin/Root/ActionRows/Row1"]
+[node name="AddFriendButton" type="Button" parent="Margin/Root/Tabs/SocialTab/SocialRow1"]
 layout_mode = 2
 text = "Add Friend"
 
-[node name="Row2" type="HBoxContainer" parent="Margin/Root/ActionRows"]
+[node name="SocialRow2" type="HBoxContainer" parent="Margin/Root/Tabs/SocialTab"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="CreatePartyButton" type="Button" parent="Margin/Root/ActionRows/Row2"]
+[node name="CreatePartyButton" type="Button" parent="Margin/Root/Tabs/SocialTab/SocialRow2"]
 layout_mode = 2
 text = "Create Party"
 
-[node name="CreateGuildButton" type="Button" parent="Margin/Root/ActionRows/Row2"]
+[node name="CreateGuildButton" type="Button" parent="Margin/Root/Tabs/SocialTab/SocialRow2"]
 layout_mode = 2
 text = "Create Guild"
 
-[node name="CastSkillButton" type="Button" parent="Margin/Root/ActionRows/Row2"]
-layout_mode = 2
-text = "Cast Skill"
-
-[node name="Row3" type="HBoxContainer" parent="Margin/Root/ActionRows"]
+[node name="LiveOpsTab" type="VBoxContainer" parent="Margin/Root/Tabs"]
 layout_mode = 2
 theme_override_constants/separation = 8
 
-[node name="SendMailButton" type="Button" parent="Margin/Root/ActionRows/Row3"]
+[node name="LiveOpsInfo" type="Label" parent="Margin/Root/Tabs/LiveOpsTab"]
+layout_mode = 2
+text = "Mail / Item"
+
+[node name="LiveOpsRow" type="HBoxContainer" parent="Margin/Root/Tabs/LiveOpsTab"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SendMailButton" type="Button" parent="Margin/Root/Tabs/LiveOpsTab/LiveOpsRow"]
 layout_mode = 2
 text = "Send Mail"
 
-[node name="ClaimMailButton" type="Button" parent="Margin/Root/ActionRows/Row3"]
+[node name="ClaimMailButton" type="Button" parent="Margin/Root/Tabs/LiveOpsTab/LiveOpsRow"]
 layout_mode = 2
 text = "Claim Mail"
 
-[node name="RefreshSnapshotButton" type="Button" parent="Margin/Root/ActionRows/Row3"]
+[node name="CombatTab" type="VBoxContainer" parent="Margin/Root/Tabs"]
 layout_mode = 2
-text = "Refresh"
+theme_override_constants/separation = 8
+
+[node name="CombatInfo" type="Label" parent="Margin/Root/Tabs/CombatTab"]
+layout_mode = 2
+text = "Skill / Trigger"
+
+[node name="CombatRow" type="HBoxContainer" parent="Margin/Root/Tabs/CombatTab"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="CastSkillButton" type="Button" parent="Margin/Root/Tabs/CombatTab/CombatRow"]
+layout_mode = 2
+text = "Cast Skill"
 
 [node name="OutputPanel" type="PanelContainer" parent="Margin/Root"]
 layout_mode = 2

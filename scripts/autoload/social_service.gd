@@ -107,3 +107,19 @@ func _add_friend_pair(a: String, b: String) -> void:
 		_friends[b] = {}
 	_friends[a][b] = true
 	_friends[b][a] = true
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"friend_requests": _friend_requests.duplicate(true),
+		"friends": _friends.duplicate(true),
+		"party": _party.duplicate(true),
+		"guild": _guild.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_friend_requests = state.get("friend_requests", []).duplicate(true)
+	_friends = state.get("friends", {}).duplicate(true)
+	_party = state.get("party", {"party_id": "", "leader": "", "members": []}).duplicate(true)
+	_guild = state.get("guild", {"guild_id": "", "leader": "", "members": []}).duplicate(true)

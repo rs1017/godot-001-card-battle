@@ -30,3 +30,13 @@ func get_recent(limit: int = 50) -> Array[Dictionary]:
 
 func clear() -> void:
 	_entries.clear()
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"entries": _entries.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_entries = state.get("entries", []).duplicate(true)

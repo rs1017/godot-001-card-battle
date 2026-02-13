@@ -8,22 +8,35 @@ extends Control
 
 func _ready() -> void:
 	$Margin/Root/TopRow/LoginButton.pressed.connect(_on_login_pressed)
+	$Margin/Root/TopRow/SaveDataButton.pressed.connect(_on_save_pressed)
+	$Margin/Root/TopRow/LoadDataButton.pressed.connect(_on_load_pressed)
 	$Margin/Root/TopRow/BackButton.pressed.connect(_on_back_pressed)
-	$Margin/Root/ActionRows/Row1/BuyStarterButton.pressed.connect(_on_buy_starter_pressed)
-	$Margin/Root/ActionRows/Row1/SendGlobalChatButton.pressed.connect(_on_send_chat_pressed)
-	$Margin/Root/ActionRows/Row1/AddFriendButton.pressed.connect(_on_add_friend_pressed)
-	$Margin/Root/ActionRows/Row2/CreatePartyButton.pressed.connect(_on_create_party_pressed)
-	$Margin/Root/ActionRows/Row2/CreateGuildButton.pressed.connect(_on_create_guild_pressed)
-	$Margin/Root/ActionRows/Row2/CastSkillButton.pressed.connect(_on_cast_skill_pressed)
-	$Margin/Root/ActionRows/Row3/SendMailButton.pressed.connect(_on_send_mail_pressed)
-	$Margin/Root/ActionRows/Row3/ClaimMailButton.pressed.connect(_on_claim_mail_pressed)
-	$Margin/Root/ActionRows/Row3/RefreshSnapshotButton.pressed.connect(_on_refresh_snapshot_pressed)
-	_append_log("Meta lobby ready.")
+	$Margin/Root/Tabs/EconomyTab/EconomyRow/BuyStarterButton.pressed.connect(_on_buy_starter_pressed)
+	$Margin/Root/Tabs/EconomyTab/EconomyRow/RefreshSnapshotButton.pressed.connect(_on_refresh_snapshot_pressed)
+	$Margin/Root/Tabs/SocialTab/SocialRow1/SendGlobalChatButton.pressed.connect(_on_send_chat_pressed)
+	$Margin/Root/Tabs/SocialTab/SocialRow1/AddFriendButton.pressed.connect(_on_add_friend_pressed)
+	$Margin/Root/Tabs/SocialTab/SocialRow2/CreatePartyButton.pressed.connect(_on_create_party_pressed)
+	$Margin/Root/Tabs/SocialTab/SocialRow2/CreateGuildButton.pressed.connect(_on_create_guild_pressed)
+	$Margin/Root/Tabs/LiveOpsTab/LiveOpsRow/SendMailButton.pressed.connect(_on_send_mail_pressed)
+	$Margin/Root/Tabs/LiveOpsTab/LiveOpsRow/ClaimMailButton.pressed.connect(_on_claim_mail_pressed)
+	$Margin/Root/Tabs/CombatTab/CombatRow/CastSkillButton.pressed.connect(_on_cast_skill_pressed)
+	_append_log("Meta lobby ready. save_path=%s" % MetaPersistenceService.get_save_path())
 
 
 func _on_login_pressed() -> void:
 	var ok: bool = AuthService.login(user_id_input.text.strip_edges(), password_input.text.strip_edges())
 	_append_log("login=%s user=%s" % [ok, AuthService.get_active_user_id()])
+	_on_refresh_snapshot_pressed()
+
+
+func _on_save_pressed() -> void:
+	var ok: bool = MetaPersistenceService.save_all()
+	_append_log("save_all=%s" % ok)
+
+
+func _on_load_pressed() -> void:
+	var ok: bool = MetaPersistenceService.load_all()
+	_append_log("load_all=%s" % ok)
 	_on_refresh_snapshot_pressed()
 
 

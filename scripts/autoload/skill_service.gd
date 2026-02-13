@@ -40,3 +40,15 @@ func request_cast(caster_id: String, skill_id: String, target_id: String = "") -
 	TriggerService.fire(String(spec["trigger"]), {"caster_id": caster_id, "skill_id": skill_id, "target_id": target_id})
 	EventBus.skill_cast_result.emit(true, skill_id, "OK")
 	return true
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"caster_mana": _caster_mana.duplicate(true),
+		"cooldown_until": _cooldown_until.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_caster_mana = state.get("caster_mana", {}).duplicate(true)
+	_cooldown_until = state.get("cooldown_until", {}).duplicate(true)

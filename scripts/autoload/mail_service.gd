@@ -51,3 +51,13 @@ func claim_mail(mail_id: String) -> bool:
 		EventBus.mail_claimed.emit(mail_id, attachments)
 		return true
 	return false
+
+
+func get_persistence_state() -> Dictionary:
+	return {
+		"mailbox": _mailbox.duplicate(true),
+	}
+
+
+func apply_persistence_state(state: Dictionary) -> void:
+	_mailbox = state.get("mailbox", {}).duplicate(true)
