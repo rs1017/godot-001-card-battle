@@ -46,6 +46,5 @@
 - Archived historical outputs: `docs/archive/ralph_runs/`
 
 ## Notes
-- Do not start development loop without the 300+ page master plan.
 - If a review is rejected, refresh references and regenerate planning artifacts before continuing.
 - For screenshot references, prefer gameplay-context images and keep chunked/batched folder organization.

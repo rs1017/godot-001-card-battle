@@ -61,9 +61,6 @@
   - if repeat count is omitted, default to `10` cycles,
   - if repeat count is provided, run exactly that many cycles (for example, `20`),
   - when all references are completed in one round, automatically start the next round and continue until the target cycle count is reached (or completion flag is present).
-- Planning gate policy:
-  - do not start development cycles unless `docs/plans/master_plan_300_pages.md` has at least 300 pages (`## Page N` sections),
-  - collect web references and screenshot packs first, then plan, then development.
 - Web reference policy:
   - references must include web-verified sources and screenshot links in `docs/references/web_reference_pack.md`,
   - main page direction starts from ComfyUI references first, then production implementation.
