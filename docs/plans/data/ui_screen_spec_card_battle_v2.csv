@@ -1,0 +1,12 @@
+screen_id,screen_name,component_id,component_name,type,state,input,event,feedback,exception_case,exception_handling,acceptance_criteria
+UI-01,main_lobby,CMP-001,mode_selector,panel,default,click,open_mode,highlight_mode,missing_profile,show_profile_error,mode_switch_under_200ms
+UI-01,main_lobby,CMP-002,start_button,button,enabled,click,start_match,button_locking,matchmaking_timeout,show_retry_popup,match_request_sent_once
+UI-02,deck_builder,CMP-101,card_grid,list,scrollable,drag,add_to_deck,slot_glow,deck_full,show_capacity_message,no_duplicate_card_over_limit
+UI-02,deck_builder,CMP-102,deck_slots,slot_group,editable,drop,save_deck,save_toast,invalid_cost_curve,show_curve_warning,save_success_under_300ms
+UI-03,battle_hud,CMP-201,mana_gauge,gauge,normal_or_warn,auto_tick,mana_update,color_shift,mana_negative,clamp_to_zero,mana_never_below_zero
+UI-03,battle_hud,CMP-202,card_hand,card_list,idle_or_selected,click_or_drag,deploy_card,spawn_preview,invalid_target,show_red_outline,deploy_preview_under_150ms
+UI-03,battle_hud,CMP-203,cancel_button,button,visible,click,cancel_deploy,hand_reset,already_committed,toast_cannot_cancel,cancel_only_before_commit
+UI-04,result_screen,CMP-301,result_banner,panel,victory_or_defeat,none,show_result,animation_play,missing_result_data,fallback_to_draw,result_text_always_visible
+UI-04,result_screen,CMP-302,retry_button,button,enabled,click,requeue_match,loading_spinner,network_error,show_retry_dialog,requeue_event_once
+UI-05,character_select,CMP-401,character_slots,list,focusable,click,select_character,selected_border,no_character_owned,show_unlock_hint,selection_confirm_under_3_clicks
+UI-06,character_create,CMP-501,name_input,input,editable,keyboard,validate_name,inline_message,invalid_chars,block_and_message,name_validation_under_100ms

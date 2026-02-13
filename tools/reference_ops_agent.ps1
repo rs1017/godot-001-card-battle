@@ -2,7 +2,8 @@ param(
 	[string]$Feature = "baseline-workflow",
 	[string]$ReferenceFocus = "global",
 	[int]$CycleId = 1,
-	[switch]$SkipSmoke
+	[switch]$SkipSmoke,
+	[switch]$UpdateLatestPlan
 )
 
 $ErrorActionPreference = "Stop"
@@ -194,13 +195,20 @@ $planBody = @"
 - QA fun evaluation: pace, variety, combo readability, counterplay clarity.
 "@
 Set-Content -Path $planPath -Value $planBody -Encoding UTF8
-Set-Content -Path $planLatest -Value $planBody -Encoding UTF8
+if ($UpdateLatestPlan) {
+	Set-Content -Path $planLatest -Value $planBody -Encoding UTF8
+}
 Set-Content -Path $planDataPath -Value "cycle_id,reference_focus,phase,owner,status`r`n$CycleId,$ReferenceFocus,planning,ralph,done`r`n$CycleId,$ReferenceFocus,graphics,grapher,requested`r`n$CycleId,$ReferenceFocus,dev,ralph,in_progress" -Encoding UTF8
 
 if (-not (Test-Path $distributionLog)) {
 	Set-Content -Path $distributionLog -Value "# Plan Distribution Log`n" -Encoding UTF8
 }
-Add-Content -Path $distributionLog -Value "- $timestamp :: published $([IO.Path]::GetFileName($planPath)) as latest_plan.md"
+if ($UpdateLatestPlan) {
+	Add-Content -Path $distributionLog -Value "- $timestamp :: published $([IO.Path]::GetFileName($planPath)) as latest_plan.md"
+}
+else {
+	Add-Content -Path $distributionLog -Value "- $timestamp :: generated $([IO.Path]::GetFileName($planPath)) (latest_plan.md preserved)"
+}
 
 $graphicsLines = @(
 	"# Graphics Strategy",

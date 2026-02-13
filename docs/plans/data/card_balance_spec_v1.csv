@@ -1,0 +1,13 @@
+card_id,card_name,card_type,cost,hp,atk,def,atk_speed,range,skill_id,skill_ratio,cooldown_sec,rarity
+C001,Footman,unit,2,380,62,18,1.0,80,SK_NONE,0.00,0,Common
+C002,Archer,unit,3,240,84,8,1.2,280,SK_NONE,0.00,0,Common
+C003,Guardian,unit,4,620,48,32,0.8,70,SK_TAUNT,0.00,10,Rare
+C004,Lancer,unit,3,300,92,10,1.1,90,SK_PIERCE,1.35,8,Rare
+C005,Mage,unit,4,220,64,6,0.9,300,SK_AOE_BOLT,1.60,9,Rare
+C006,Assassin,unit,3,210,118,5,1.4,75,SK_BACKSTAB,1.80,11,Epic
+C007,WarDrum,spell,2,0,0,0,0,0,SK_TEAM_HASTE,0.25,14,Rare
+C008,Fireball,spell,4,0,0,0,0,0,SK_FIREBALL,2.20,12,Rare
+C009,FrostNova,spell,4,0,0,0,0,0,SK_FREEZE,0.00,15,Epic
+C010,HealPulse,spell,3,0,0,0,0,0,SK_HEAL,1.20,10,Common
+C011,SiegeGolem,unit,5,820,96,24,0.7,95,SK_SIEGE,1.40,16,Epic
+C012,Sniper,unit,5,260,140,4,0.9,420,SK_HEADSHOT,2.00,14,Epic

@@ -1,0 +1,7 @@
+event_id,publisher,subscribers,payload_schema,reliability,notes
+ui.card_select,UI-003,SYS-001,"card_id:string;hand_index:int",at_most_once,client_local_event
+battle.deploy_request,UI-003,SYS-004,"card_id:string;lane_id:int;pos:vector2",at_most_once,validated_before_send
+battle.deploy_reject,SYS-004,UI-003,"reason_code:string",at_least_once,toast_and_sfx
+battle.mana_changed,SYS-003,UI-003,"current_mana:float;delta:float",at_least_once,ui_gauge_update
+battle.match_end,SYS-004,"UI-004|SYS-006","result:string;remain_time:int",exactly_once,end_of_match_gate
+reward.granted,SYS-006,UI-004,"gold:int;shard:int;rank_point:int",exactly_once,idempotency_key_required

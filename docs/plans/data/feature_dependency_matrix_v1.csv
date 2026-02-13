@@ -1,0 +1,7 @@
+upstream_feature,downstream_feature,dependency_reason,block_condition,owner
+SYS-001,SYS-002,deck_build_uses_card_schema,missing_card_id_or_cost,design
+SYS-002,UI-002,deck_ui_requires_validation,no_deck_rule_validation,client
+SYS-003,UI-003,hud_mana_gauge_subscribes_tick,mana_event_not_emitted,client
+SYS-004,UI-003,hud_lane_state_depends_on_battle,no_lane_state_event,client
+SYS-004,UI-004,result_screen_requires_match_end,missing_match_result_payload,client
+SYS-006,UI-004,reward_panel_requires_granted_payload,reward_schema_missing,server

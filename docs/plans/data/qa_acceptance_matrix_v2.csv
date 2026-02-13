@@ -1,0 +1,10 @@
+tc_id,priority,feature,precondition,test_steps,expected_pass,expected_fail
+TC-P0-01,P0,mana,match_started_mana_less_than_cost,"select_cost4_card;try_deploy",deploy_blocked_toast_shown,unit_spawned
+TC-P0-02,P0,card_state,match_started,"repeat_select_cancel_100_times",no_input_lock_or_state_leak,input_stuck_or_wrong_state
+TC-P0-03,P0,match_end,forced_double_tower_zero,"trigger_simultaneous_destroy",result_draw_consistent,result_random_or_inconsistent
+TC-P0-04,P0,reward,result_payload_ready,"send_duplicate_confirm_5_times",reward_once_only,duplicate_reward_granted
+TC-P0-05,P0,deck_validation,deck_invalid_duplicate3,"press_save",save_blocked_with_message,invalid_deck_saved
+TC-P1-01,P1,hud_layout,resolution_1280x720,"enter_battle_and_play_3min",no_overlap_or_crop,hud_overlap_or_crop
+TC-P1-02,P1,hud_layout,resolution_1920x1080,"enter_battle_and_play_3min",no_overlap_or_crop,hud_overlap_or_crop
+TC-P1-03,P1,result_ui,network_delay_2s,"finish_match_and_wait",skeleton_then_normal_render,blank_or_duplicate_panel
+TC-P2-01,P2,ai,bot_match_enabled,"run_50_matches",no_idle_over_20s,idle_over_20s

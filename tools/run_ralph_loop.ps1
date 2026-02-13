@@ -5,7 +5,9 @@ param(
 	[string]$CompletionFlag = "docs/ralph/COMPLETE.flag",
 	[string]$MasterPlanPath = "docs/plans/master_plan_300_pages.md",
 	[int]$MinPlanPages = 300,
-	[bool]$StopOnQaComplete = $true
+	[int]$StopOnQaComplete = 1,
+	[switch]$SkipMasterPlanGate,
+	[string]$PlanReadinessPath = "docs/plans/latest_plan.md"
 )
 
 $ErrorActionPreference = "Stop"
@@ -17,6 +19,8 @@ $statePath = Join-Path $ralphRoot "state.json"
 $cycleLogPath = Join-Path $ralphRoot "cycle_log.md"
 $completionFlagPath = Join-Path $repoRoot $CompletionFlag
 $masterPlanFullPath = Join-Path $repoRoot $MasterPlanPath
+$planReadinessFullPath = Join-Path $repoRoot $PlanReadinessPath
+$featureBacklogPath = Join-Path $repoRoot "docs\plans\data\auto_feature_backlog.csv"
 
 New-Item -ItemType Directory -Force -Path $ralphRoot | Out-Null
 if (-not (Test-Path $cycleLogPath)) {
@@ -32,6 +36,56 @@ function Assert-MasterPlan([string]$path, [int]$minPages) {
 		throw "Master plan pages are insufficient: $pageCount/$minPages"
 	}
 	Write-Output "[RALPH] master plan gate passed ($pageCount pages)"
+}
+
+function Assert-PlanReady([string]$path) {
+	if (-not (Test-Path $path)) {
+		throw "Plan readiness file not found: $path"
+	}
+	$content = Get-Content -Path $path -Raw
+	if ([string]::IsNullOrWhiteSpace($content)) {
+		throw "Plan readiness file is empty: $path"
+	}
+	$requiredPatterns = @("## 3. 메인 루프", "## 5. UI 실행 명세", "## 7. QA 판정 기준")
+	foreach ($pattern in $requiredPatterns) {
+		if ($content -notmatch [regex]::Escape($pattern)) {
+			throw "Plan readiness missing required section: $pattern"
+		}
+	}
+	Write-Output "[RALPH] plan readiness gate passed ($path)"
+}
+
+function Assert-PlayableGate([string]$rootPath) {
+	$projectFile = Join-Path $rootPath "project.godot"
+	if (-not (Test-Path $projectFile)) {
+		throw "Playable gate failed: project.godot missing"
+	}
+	$projectText = Get-Content -Path $projectFile -Raw
+	$mainSceneMatch = [regex]::Match($projectText, '(?m)^\s*run/main_scene\s*=\s*"([^"]+)"')
+	if (-not $mainSceneMatch.Success) {
+		throw "Playable gate failed: run/main_scene not configured"
+	}
+	$sceneRes = $mainSceneMatch.Groups[1].Value
+	$sceneLocal = $sceneRes.Replace("res://", "").Replace("/", "\")
+	$sceneFullPath = Join-Path $rootPath $sceneLocal
+	if (-not (Test-Path $sceneFullPath)) {
+		throw "Playable gate failed: main scene missing ($sceneRes)"
+	}
+	Write-Output "[RALPH] playable gate passed ($sceneRes)"
+}
+
+function Ensure-FeatureBacklog([string]$path) {
+	$dir = Split-Path -Path $path -Parent
+	New-Item -ItemType Directory -Force -Path $dir | Out-Null
+	if (-not (Test-Path $path)) {
+		Set-Content -Path $path -Encoding UTF8 -Value "created_at,cycle,focus,trigger,feature_name,status,owner`r`n"
+	}
+}
+
+function Add-FeatureBacklog([string]$path, [int]$cycle, [string]$focus, [string]$trigger, [string]$featureName) {
+	Ensure-FeatureBacklog -path $path
+	$row = "{0},{1},{2},{3},{4},pending,ralph" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $cycle, $focus, $trigger, $featureName
+	Add-Content -Path $path -Value $row
 }
 
 function Get-ReferenceBuckets([string]$rootPath) {
@@ -147,13 +201,19 @@ function Mark-SmokePassInQA([hashtable]$artifactMap) {
 
 $state = Load-State $statePath
 $refs = Get-ReferenceBuckets $referenceRoot
-Assert-MasterPlan -path $masterPlanFullPath -minPages $MinPlanPages
+if ($SkipMasterPlanGate) {
+	Assert-PlanReady -path $planReadinessFullPath
+}
+else {
+	Assert-MasterPlan -path $masterPlanFullPath -minPages $MinPlanPages
+}
+Assert-PlayableGate -rootPath $repoRoot
 
 for ($i = 1; $i -le $MaxCycles; $i++) {
 	if ($refs.Count -gt 0) {
 		$remaining = @($refs | Where-Object { $_ -notin $state.completed_references })
 		if ($remaining.Count -eq 0) {
-			if ($StopOnQaComplete) {
+			if ($StopOnQaComplete -ne 0) {
 				Add-Content -Path $cycleLogPath -Value "- $(Get-Date -Format "yyyy-MM-dd HH:mm:ss") :: QA completed for all references, stop."
 				Write-Output "RALPH_LOOP_COMPLETED=TRUE"
 				Write-Output "REASON=QA_COMPLETED"
@@ -194,6 +254,14 @@ for ($i = 1; $i -le $MaxCycles; $i++) {
 	if ($LASTEXITCODE -ne 0 -or -not (Validate-Artifacts -artifactMap $artifactMap)) {
 		$cyclePassed = $false
 		$failReason = "artifact_generation_or_validation_failed"
+	}
+
+	if ($cyclePassed) {
+		& powershell -ExecutionPolicy Bypass -File (Join-Path $repoRoot "tools\validate_cards.ps1") | Out-Null
+		if ($LASTEXITCODE -ne 0) {
+			$cyclePassed = $false
+			$failReason = "card_validation_failed"
+		}
 	}
 
 	if ($cyclePassed) {
@@ -249,6 +317,12 @@ for ($i = 1; $i -le $MaxCycles; $i++) {
 		$state.reference_streaks[$focus] = 0
 		if (-not $failReason) {
 			$failReason = "unknown_failure"
+		}
+		switch ($failReason) {
+			"card_validation_failed" { Add-FeatureBacklog -path $featureBacklogPath -cycle $cycleNo -focus $focus -trigger $failReason -featureName "card_data_schema_repair" }
+			"headless_smoke_failed" { Add-FeatureBacklog -path $featureBacklogPath -cycle $cycleNo -focus $focus -trigger $failReason -featureName "runtime_boot_stability" }
+			"review_agent_rejected" { Add-FeatureBacklog -path $featureBacklogPath -cycle $cycleNo -focus $focus -trigger $failReason -featureName "plan_spec_clarity_upgrade" }
+			default { Add-FeatureBacklog -path $featureBacklogPath -cycle $cycleNo -focus $focus -trigger $failReason -featureName "investigate_unknown_failure" }
 		}
 		Add-Content -Path $cycleLogPath -Value "- $(Get-Date -Format "yyyy-MM-dd HH:mm:ss") :: cycle $cycleNo failed (focus=$focus, reason=$failReason, streak reset)"
 	}

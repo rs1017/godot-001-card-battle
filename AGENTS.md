@@ -87,6 +87,8 @@
   - battle and skill systems should include programmer handoff specs (flow, rules, variables, exceptions, tech requirements).
   - skill docs should include animation/VFX/SFX timing guides.
   - map-heavy plans should include map overview, connection graph, legend/icons, map parameters, region background settings, and landmark tables.
+  - when `reference/docs/기획서-샘플-2.md` is updated, mirror its section order in active plans and include a `샘플-2(v2) 적용 체크리스트` table.
+  - for sample-derived docs, verify and report `git status --short` evidence in the same turn after edits.
   - UI planning docs must include screen list/objective, user flow, per-screen component/state/event spec, exception handling, and QA acceptance criteria.
   - UI planning docs must include at least one flow diagram (Mermaid) and one component table per screen group.
   - UI planning assets must be saved under `docs/plans/images/ui/` and UI tabular specs under `docs/plans/data/ui_*.csv`.

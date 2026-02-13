@@ -2,7 +2,7 @@ extends Node
 ## Bug Reporter - 디버그 오버레이 도구
 ## F12 또는 BUG 버튼으로 활성화하여 오브젝트 번호 오버레이, 스크린샷, 크롭 기능 제공
 
-const SAVE_DIR: String = "user://bug_reports/"
+const SAVE_DIR: String = "user://bug_reports"
 const BADGE_COLOR: Color = Color(0.9, 0.2, 0.2, 0.85)
 const BADGE_FONT_SIZE: int = 14
 const TOOLBAR_HEIGHT: int = 50
@@ -468,6 +468,21 @@ func _get_timestamp() -> String:
 	return "%04d%02d%02d_%02d%02d%02d" % [dt["year"], dt["month"], dt["day"], dt["hour"], dt["minute"], dt["second"]]
 
 
+func _build_unique_save_path(base_name: String) -> Dictionary:
+	var abs_dir: String = ProjectSettings.globalize_path(SAVE_DIR)
+	var user_path: String = "%s/%s.png" % [SAVE_DIR, base_name]
+	var abs_path: String = "%s/%s.png" % [abs_dir, base_name]
+
+	if not FileAccess.file_exists(abs_path):
+		return {"user": user_path, "abs": abs_path}
+
+	# 같은 초에 반복 저장될 수 있으므로 ticks 기반 suffix를 추가해 충돌 방지.
+	var suffix: int = Time.get_ticks_msec() % 100000
+	user_path = "%s/%s_%d.png" % [SAVE_DIR, base_name, suffix]
+	abs_path = "%s/%s_%d.png" % [abs_dir, base_name, suffix]
+	return {"user": user_path, "abs": abs_path}
+
+
 func _save_screenshot(with_overlay: bool) -> String:
 	var image: Image = get_viewport().get_texture().get_image()
 	if not image:
@@ -476,16 +491,16 @@ func _save_screenshot(with_overlay: bool) -> String:
 
 	var timestamp: String = _get_timestamp()
 	var suffix: String = "" if not with_overlay else "_annotated"
-	var filename: String = "bug_%s%s.png" % [timestamp, suffix]
-	var path: String = SAVE_DIR + filename
+	var save_paths: Dictionary = _build_unique_save_path("bug_%s%s" % [timestamp, suffix])
+	var path: String = save_paths["user"]
+	var abs_path: String = save_paths["abs"]
 
-	var err: Error = image.save_png(path)
+	var err: Error = image.save_png(abs_path)
 	if err != OK:
-		push_error("[BugReporter] Failed to save screenshot: %s (error: %d)" % [path, err])
+		push_error("[BugReporter] Failed to save screenshot: %s (error: %d)" % [abs_path, err])
 		return ""
 
-	var global_path: String = ProjectSettings.globalize_path(path)
-	print("[BugReporter] Screenshot: %s" % global_path)
+	print("[BugReporter] Screenshot: %s" % abs_path)
 	return path
 
 
@@ -508,21 +523,24 @@ func _save_crop(rect: Rect2i) -> String:
 		return ""
 
 	var timestamp: String = _get_timestamp()
-	var filename: String = "bug_%s_crop.png" % timestamp
-	var path: String = SAVE_DIR + filename
+	var save_paths: Dictionary = _build_unique_save_path("bug_%s_crop" % timestamp)
+	var path: String = save_paths["user"]
+	var abs_path: String = save_paths["abs"]
 
-	var err: Error = cropped.save_png(path)
+	var err: Error = cropped.save_png(abs_path)
 	if err != OK:
-		push_error("[BugReporter] Failed to save crop: %s (error: %d)" % [path, err])
+		push_error("[BugReporter] Failed to save crop: %s (error: %d)" % [abs_path, err])
 		return ""
 
-	var global_path: String = ProjectSettings.globalize_path(path)
-	print("[BugReporter] Crop saved: %s" % global_path)
+	print("[BugReporter] Crop saved: %s" % abs_path)
 	return path
 
 
 func _ensure_save_dir() -> void:
-	DirAccess.make_dir_recursive_absolute(SAVE_DIR)
+	var abs_dir: String = ProjectSettings.globalize_path(SAVE_DIR)
+	var mk_err: Error = DirAccess.make_dir_recursive_absolute(abs_dir)
+	if mk_err != OK and mk_err != ERR_ALREADY_EXISTS:
+		push_error("[BugReporter] Failed to create save directory: %s (error: %d)" % [abs_dir, mk_err])
 
 
 # === 크롭 기능 ===

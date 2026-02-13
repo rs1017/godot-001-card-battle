@@ -1,0 +1,11 @@
+asset_id,category,asset_name,spec,format,target_path,priority,owner,acceptance
+A001,ui,hud_mana_bar,1920base_width540_height48,PNG,assets/ui/hud/,P0,grapher,fill_and_warning_state_visible
+A002,ui,hud_card_slot_5set,slot_w220_h300_x5,PNG,assets/ui/hud/,P0,grapher,selected_highlight_clear
+A003,ui,result_banner_victory,w1200_h320,PNG,assets/ui/result/,P0,grapher,victory_theme_readable
+A004,ui,result_banner_defeat,w1200_h320,PNG,assets/ui/result/,P0,grapher,defeat_theme_readable
+A005,ui,result_banner_draw,w1200_h320,PNG,assets/ui/result/,P1,grapher,draw_theme_readable
+A006,cards,card_frame_common,1024x1536,PNG,assets/cards/frame/,P0,grapher,rarity_color_match
+A007,cards,card_frame_rare,1024x1536,PNG,assets/cards/frame/,P0,grapher,rarity_color_match
+A008,cards,card_frame_epic,1024x1536,PNG,assets/cards/frame/,P0,grapher,rarity_color_match
+A009,vfx,fx_fireball_sheet,2048x2048_8x8,PNG,assets/vfx/,P1,grapher,alpha_edge_clean
+A010,vfx,fx_freeze_sheet,2048x2048_8x8,PNG,assets/vfx/,P1,grapher,no_pixel_break

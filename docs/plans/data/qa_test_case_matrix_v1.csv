@@ -1,0 +1,7 @@
+tc_id,feature_id,scenario,priority,steps,expected_result,owner
+TC-001,SYS-001,"card_select_then_cancel_loop",P0,"select card 100x;cancel",no_state_pollution,qa
+TC-002,SYS-003,"deploy_with_insufficient_mana",P0,"set mana low;attempt deploy",deploy_rejected_100_percent,qa
+TC-003,SYS-004,"simultaneous_tower_destroy",P0,"force_double_kill",draw_or_rule_based_result_consistent,qa
+TC-004,UI-004,"result_screen_with_network_delay",P1,"delay reward payload",single_request_no_duplicate,qa
+TC-005,SYS-002,"save_invalid_deck",P1,"exceed_duplicate_limit;save",save_blocked_and_warning,qa
+TC-006,SYS-005,"ai_long_run_50_matches",P2,"run automated matches",no_idle_over_20_seconds,qa

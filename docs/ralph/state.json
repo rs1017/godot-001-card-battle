@@ -1,14 +1,13 @@
 ﻿{
-    "total_cycles":  6,
+    "total_cycles":  10,
     "reference_streaks":  {
                               "docs":  2,
-                              "clash-royale":  2,
-                              "minion-masters":  2
+                              "clash-royale":  1,
+                              "minion-masters":  1
                           },
-    "total_rounds":  1,
+    "total_rounds":  2,
     "completed_references":  [
                                  "clash-royale",
-                                 "docs",
-                                 "minion-masters"
+                                 "docs"
                              ]
 }
