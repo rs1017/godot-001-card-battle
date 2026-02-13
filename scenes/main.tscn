@@ -50,6 +50,11 @@ layout_mode = 2
 custom_minimum_size = Vector2(200, 60)
 text = "Battle Start"
 
+[node name="MetaLobbyButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(200, 60)
+text = "Meta Lobby"
+
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 custom_minimum_size = Vector2(200, 60)

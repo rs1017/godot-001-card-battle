@@ -3,6 +3,7 @@ extends Control
 ## 배틀 시작과 종료를 처리합니다.
 
 @onready var start_button: Button = $VBoxContainer/StartButton
+@onready var meta_lobby_button: Button = $VBoxContainer/MetaLobbyButton
 @onready var quit_button: Button = $VBoxContainer/QuitButton
 @onready var title_label: Label = $VBoxContainer/Title
 @onready var subtitle_label: Label = $VBoxContainer/Subtitle
@@ -13,6 +14,7 @@ var _is_transitioning: bool = false
 func _ready() -> void:
 	GameManager.change_state(GameManager.GameState.MAIN_MENU)
 	start_button.pressed.connect(_on_start_pressed)
+	meta_lobby_button.pressed.connect(_on_meta_lobby_pressed)
 	quit_button.pressed.connect(_on_quit_pressed)
 
 	# 타이틀 스타일
@@ -23,6 +25,7 @@ func _ready() -> void:
 
 	# 버튼 스타일
 	start_button.add_theme_font_size_override("font_size", 22)
+	meta_lobby_button.add_theme_font_size_override("font_size", 22)
 	quit_button.add_theme_font_size_override("font_size", 22)
 
 
@@ -40,8 +43,19 @@ func _on_start_pressed() -> void:
 		return
 	_is_transitioning = true
 	start_button.disabled = true
+	meta_lobby_button.disabled = true
 	quit_button.disabled = true
 	get_tree().change_scene_to_file("res://scenes/battle/battle_arena.tscn")
+
+
+func _on_meta_lobby_pressed() -> void:
+	if _is_transitioning:
+		return
+	_is_transitioning = true
+	start_button.disabled = true
+	meta_lobby_button.disabled = true
+	quit_button.disabled = true
+	get_tree().change_scene_to_file("res://scenes/ui/meta_lobby.tscn")
 
 
 func _on_quit_pressed() -> void:
@@ -49,5 +63,6 @@ func _on_quit_pressed() -> void:
 		return
 	_is_transitioning = true
 	start_button.disabled = true
+	meta_lobby_button.disabled = true
 	quit_button.disabled = true
 	get_tree().quit()

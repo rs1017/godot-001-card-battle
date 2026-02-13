@@ -1,0 +1,14 @@
+component_id,scene_path,node_path,type,event,service
+META-USER-ID,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/UserIdInput,LineEdit,input,AuthService
+META-PASSWORD,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/PasswordInput,LineEdit,input,AuthService
+META-LOGIN,res://scenes/ui/meta_lobby.tscn,Margin/Root/TopRow/LoginButton,Button,pressed,AuthService
+META-BUY-STARTER,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row1/BuyStarterButton,Button,pressed,ShopService
+META-SEND-CHAT,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row1/SendGlobalChatButton,Button,pressed,ChatService
+META-ADD-FRIEND,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row1/AddFriendButton,Button,pressed,SocialService
+META-CREATE-PARTY,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row2/CreatePartyButton,Button,pressed,SocialService
+META-CREATE-GUILD,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row2/CreateGuildButton,Button,pressed,SocialService
+META-CAST-SKILL,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row2/CastSkillButton,Button,pressed,SkillService
+META-SEND-MAIL,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row3/SendMailButton,Button,pressed,MailService
+META-CLAIM-MAIL,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row3/ClaimMailButton,Button,pressed,MailService
+META-REFRESH,res://scenes/ui/meta_lobby.tscn,Margin/Root/ActionRows/Row3/RefreshSnapshotButton,Button,pressed,InventoryService
+META-OUTPUT,res://scenes/ui/meta_lobby.tscn,Margin/Root/OutputPanel/OutputLog,RichTextLabel,append,LogService
