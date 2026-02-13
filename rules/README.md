@@ -10,6 +10,7 @@
 - `rules/05_qa_rules.md`: QA 실행/기록 규칙
 - `rules/06_git_review_release_rules.md`: Git/리뷰/릴리즈 규칙
 - `rules/07_role_ownership_raci.md`: 역할 책임/승인 체계
+- `rules/08_workspace_methodology.md`: 워크스페이스 운영 방법론(반복/피드백 반영)
 
 ## Priority
 1. 사용자 직접 지시
