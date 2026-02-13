@@ -1,0 +1,2001 @@
+Godot Engine v4.5.1.stable.mono.official.f62fdbde1 - https://godotengine.org
+ERROR: Can't create shader cache folder, no shader caching will happen: user://
+   at: RasterizerGLES3 (drivers/gles3/rasterizer_gles3.cpp:335)
+OpenGL API 3.3.0 Core Profile Context 22.20.44.24.221223 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2548)
+[BugReporter] Save dir selected: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+[GameManager] State: MAIN_MENU -> MAIN_MENU
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-50465b859ece5be77dffbe75292e8be6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_ground (res://scripts/battle/arena_visuals.gd:36)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:20)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-fa0642d032e41950b56d50de1b9594b6.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_river (res://scripts/battle/arena_visuals.gd:41)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:21)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:46)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-492f70beeb154a59514a6ffe11803bfc.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_roads (res://scripts/battle/arena_visuals.gd:47)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:22)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-1c149849568d0473a2a3470d5323cc26.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:51)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-1c149849568d0473a2a3470d5323cc26.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:51)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:51)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-1c149849568d0473a2a3470d5323cc26.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:52)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-1c149849568d0473a2a3470d5323cc26.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:52)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_bridges (res://scripts/battle/arena_visuals.gd:52)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:23)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-67e83c11c7e9246d134e1f7625349973.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:56)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-67e83c11c7e9246d134e1f7625349973.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:56)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:56)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-67e83c11c7e9246d134e1f7625349973.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:57)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-67e83c11c7e9246d134e1f7625349973.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:57)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/battle/arena_visuals.gd:81)
+       [1] _add_asset (res://scripts/battle/arena_visuals.gd:61)
+       [2] _build_backdrop (res://scripts/battle/arena_visuals.gd:57)
+       [3] _ready (res://scripts/battle/arena_visuals.gd:24)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-a282e0690a246f744f5b4af15b8606ae.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-a282e0690a246f744f5b4af15b8606ae.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Unable to open file: res://.godot/imported/hexagons_medieval.png-8b555acbfe5f728d7552e929f79a77ab.s3tc.ctex.
+   at: _load_data (scene/resources/compressed_texture.cpp:41)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://.godot/imported/hexagons_medieval.png-8b555acbfe5f728d7552e929f79a77ab.s3tc.ctex.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/hexagons_medieval.png.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:73)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+[GameManager] State: MAIN_MENU -> BATTLE_PLAYING
+[MatchManager] Match started!
+[AI] Playing Bone Barricade on lane 1 (Mana: 1.2)
+[MatchManager] Enemy spawned Skeleton Minion on lane 0
+[MatchManager] Enemy spawned Skeleton Minion on lane 0
+[AI] Playing Skeleton Minion on lane 0 (Mana: 0.2)
+
+[BugReporter] === BUG REPORT #1 ===
+  #01 Left Lane
+  #02 Right Lane
+  #03 River (Center)
+  #04 Player Territory
+  #05 Enemy Territory
+  #06 Player Tower (HP: 2000/2000)
+  #07 Enemy Tower (HP: 2000/2000)
+  #08 Enemy Skeleton Minion (HP: 40/40)
+  #09 Enemy Skeleton Minion (HP: 40/40)
+  #10 Player HP Label
+  #11 Timer
+  #12 Enemy HP Label
+  #13 Mana Bar: 7/10
+[BugReporter] Save directory: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+
+[GameManager] State: BATTLE_PLAYING -> BATTLE_PAUSED

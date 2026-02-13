@@ -1,0 +1,17 @@
+[BugReporter] Report #3
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Player Tower (HP: 1780/2000)
+#07 Enemy Tower (HP: 2000/2000)
+#08 Enemy Skeleton Minion (HP: 40/40)
+#09 Player HP Label
+#10 Timer
+#11 Enemy HP Label
+#12 Mana Bar: 9/10
+--- Note ---
+버그 보내고 난 다음에 다시 버그 버튼 누르면 이전의 대화가 남아 있

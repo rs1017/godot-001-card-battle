@@ -1,0 +1,12 @@
+[BugReporter] Report #1
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Title: KAYKIT CARD BATTLE
+#07 Subtitle: Lane Battler
+--- Note ---
+ddd

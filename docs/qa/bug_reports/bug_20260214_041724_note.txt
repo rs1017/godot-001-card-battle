@@ -1,0 +1,16 @@
+[BugReporter] Report #1
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Player Tower (HP: 2000/2000)
+#07 Enemy Tower (HP: 2000/2000)
+#08 Player HP Label
+#09 Timer
+#10 Enemy HP Label
+#11 Mana Bar: 5/10
+--- Note ---
+바닥이 이상 하다. 바닥을 제대로 채워라.
