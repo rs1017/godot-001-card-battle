@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+card_name = "Rogue"
+mana_cost = 3
+card_category = 0
+minion_type = 0
+health = 60
+damage = 30
+attack_speed = 1.5
+move_speed = 4.5
+attack_range = 1.8
+aggro_range = 6.0
+kaykit_model_path = "res://assets/kaykit/adventurers/Rogue.glb"
+anim_idle = "Idle"
+anim_walk = "Walking_A"
+anim_attack = "Dualwield_Melee_Attack_Chop"
+anim_hit = "Hit_A"
+anim_death = "Death_A"

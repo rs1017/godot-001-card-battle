@@ -1,0 +1,82 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/entities/minion.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/components/health_component.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/components/health_bar_3d.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/state_machine/state_machine.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/minion_states/idle_state.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/minion_states/walk_state.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/minion_states/attack_state.gd" id="7"]
+[ext_resource type="Script" path="res://scripts/minion_states/death_state.gd" id="8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_001"]
+radius = 0.4
+height = 1.6
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_aggro"]
+radius = 6.0
+
+[node name="Minion" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1")
+
+[node name="ModelContainer" type="Node3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+shape = SubResource("CapsuleShape3D_001")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="HealthBar3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)
+script = ExtResource("3")
+
+[node name="SubViewport" type="SubViewport" parent="HealthBar3D"]
+transparent_bg = true
+size = Vector2i(200, 30)
+render_target_update_mode = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="HealthBar3D/SubViewport"]
+offset_right = 200.0
+offset_bottom = 30.0
+value = 100.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="HealthBar3D/SubViewport/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3D" type="Sprite3D" parent="HealthBar3D"]
+pixel_size = 0.005
+billboard = 1
+
+[node name="AggroArea" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 22
+monitoring = true
+
+[node name="AggroShape" type="CollisionShape3D" parent="AggroArea"]
+shape = SubResource("SphereShape3D_aggro")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("4")
+initial_state = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="StateMachine"]
+script = ExtResource("5")
+
+[node name="WalkState" type="Node" parent="StateMachine"]
+script = ExtResource("6")
+
+[node name="AttackState" type="Node" parent="StateMachine"]
+script = ExtResource("7")
+
+[node name="DeathState" type="Node" parent="StateMachine"]
+script = ExtResource("8")

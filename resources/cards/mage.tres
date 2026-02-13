@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+card_name = "Mage"
+mana_cost = 6
+card_category = 0
+minion_type = 1
+health = 80
+damage = 35
+attack_speed = 0.8
+move_speed = 2.0
+attack_range = 5.0
+aggro_range = 8.0
+kaykit_model_path = "res://assets/kaykit/adventurers/Mage.glb"
+anim_idle = "Idle"
+anim_walk = "Walking_A"
+anim_attack = "1H_Ranged_Aiming"
+anim_hit = "Hit_A"
+anim_death = "Death_A"

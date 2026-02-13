@@ -1,0 +1,259 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://scripts/battle/match_manager.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/battle/lane_manager.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/battle/mana_manager.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/battle/card_deck.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/battle/ai_opponent.gd" id="5"]
+[ext_resource type="Script" path="res://scripts/entities/tower.gd" id="6"]
+[ext_resource type="Script" path="res://scripts/components/health_component.gd" id="7"]
+[ext_resource type="Script" path="res://scripts/components/health_bar_3d.gd" id="8"]
+[ext_resource type="Script" path="res://scripts/ui/battle_hud.gd" id="9"]
+[ext_resource type="Script" path="res://scripts/battle/arena_visuals.gd" id="10"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tower"]
+size = Vector3(3, 4, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_floor"]
+size = Vector3(20, 0.2, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_floor"]
+size = Vector3(20, 0.2, 30)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_detect"]
+radius = 4.0
+
+[sub_resource type="Environment" id="Environment_001"]
+ambient_light_source = 2
+ambient_light_color = Color(0.4, 0.4, 0.5, 1)
+ambient_light_energy = 0.5
+
+[sub_resource type="StandardMaterial3D" id="Material_floor"]
+albedo_color = Color(0.35, 0.55, 0.3, 1)
+
+[node name="BattleArena" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Environment" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment"]
+transform = Transform3D(0.866, -0.354, 0.354, 0, 0.707, 0.707, -0.5, -0.612, 0.612, 5, 12, 5)
+shadow_enabled = true
+light_energy = 1.2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_001")
+
+[node name="ArenaFloor" type="StaticBody3D" parent="Environment"]
+collision_layer = 1
+
+[node name="FloorMesh" type="MeshInstance3D" parent="Environment/ArenaFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+mesh = SubResource("BoxMesh_floor")
+surface_material_override/0 = SubResource("Material_floor")
+
+[node name="FloorCollision" type="CollisionShape3D" parent="Environment/ArenaFloor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+shape = SubResource("BoxShape3D_floor")
+
+[node name="ArenaVisuals" type="Node3D" parent="Environment"]
+script = ExtResource("10")
+
+[node name="Entities" type="Node3D" parent="."]
+
+[node name="PlayerTower" type="StaticBody3D" parent="Entities"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
+collision_layer = 8
+script = ExtResource("6")
+team = 0
+tower_damage = 30
+model_path = "res://assets/kaykit/medieval-hexagon/buildings/blue/building_castle_blue.fbx"
+
+[node name="ModelContainer" type="Node3D" parent="Entities/PlayerTower"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entities/PlayerTower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tower")
+
+[node name="HealthComponent" type="Node" parent="Entities/PlayerTower"]
+script = ExtResource("7")
+max_health = 2000
+current_health = 2000
+
+[node name="HealthBar3D" type="Node3D" parent="Entities/PlayerTower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+script = ExtResource("8")
+
+[node name="SubViewport" type="SubViewport" parent="Entities/PlayerTower/HealthBar3D"]
+transparent_bg = true
+size = Vector2i(300, 40)
+render_target_update_mode = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Entities/PlayerTower/HealthBar3D/SubViewport"]
+offset_right = 300.0
+offset_bottom = 40.0
+value = 100.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Entities/PlayerTower/HealthBar3D/SubViewport/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3D" type="Sprite3D" parent="Entities/PlayerTower/HealthBar3D"]
+pixel_size = 0.005
+billboard = 1
+
+[node name="DetectionArea" type="Area3D" parent="Entities/PlayerTower"]
+collision_layer = 0
+collision_mask = 4
+monitoring = true
+
+[node name="DetectionShape" type="CollisionShape3D" parent="Entities/PlayerTower/DetectionArea"]
+shape = SubResource("SphereShape3D_detect")
+
+[node name="AttackTimer" type="Timer" parent="Entities/PlayerTower"]
+wait_time = 2.0
+autostart = true
+
+[node name="EnemyTower" type="StaticBody3D" parent="Entities"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12)
+collision_layer = 16
+script = ExtResource("6")
+team = 1
+tower_damage = 30
+model_path = "res://assets/kaykit/medieval-hexagon/buildings/red/building_castle_red.fbx"
+
+[node name="ModelContainer" type="Node3D" parent="Entities/EnemyTower"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Entities/EnemyTower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_tower")
+
+[node name="HealthComponent" type="Node" parent="Entities/EnemyTower"]
+script = ExtResource("7")
+max_health = 2000
+current_health = 2000
+
+[node name="HealthBar3D" type="Node3D" parent="Entities/EnemyTower"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+script = ExtResource("8")
+
+[node name="SubViewport" type="SubViewport" parent="Entities/EnemyTower/HealthBar3D"]
+transparent_bg = true
+size = Vector2i(300, 40)
+render_target_update_mode = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Entities/EnemyTower/HealthBar3D/SubViewport"]
+offset_right = 300.0
+offset_bottom = 40.0
+value = 100.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="Entities/EnemyTower/HealthBar3D/SubViewport/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite3D" type="Sprite3D" parent="Entities/EnemyTower/HealthBar3D"]
+pixel_size = 0.005
+billboard = 1
+
+[node name="DetectionArea" type="Area3D" parent="Entities/EnemyTower"]
+collision_layer = 0
+collision_mask = 2
+monitoring = true
+
+[node name="DetectionShape" type="CollisionShape3D" parent="Entities/EnemyTower/DetectionArea"]
+shape = SubResource("SphereShape3D_detect")
+
+[node name="AttackTimer" type="Timer" parent="Entities/EnemyTower"]
+wait_time = 2.0
+autostart = true
+
+[node name="PlayerMinions" type="Node3D" parent="Entities"]
+
+[node name="EnemyMinions" type="Node3D" parent="Entities"]
+
+[node name="Lanes" type="Node3D" parent="."]
+script = ExtResource("2")
+
+[node name="LeftLane" type="Node3D" parent="Lanes"]
+
+[node name="WP0" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 10)
+
+[node name="WP1" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 6)
+
+[node name="WP2" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2)
+
+[node name="WP3" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="WP4" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2)
+
+[node name="WP5" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -6)
+
+[node name="WP6" type="Marker3D" parent="Lanes/LeftLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -10)
+
+[node name="RightLane" type="Node3D" parent="Lanes"]
+
+[node name="WP0" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 10)
+
+[node name="WP1" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+
+[node name="WP2" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+
+[node name="WP3" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="WP4" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+
+[node name="WP5" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
+
+[node name="WP6" type="Marker3D" parent="Lanes/RightLane"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -10)
+
+[node name="DeployZones" type="Node3D" parent="."]
+
+[node name="LeftLaneZone" type="Area3D" parent="DeployZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 8)
+collision_layer = 32
+collision_mask = 0
+
+[node name="RightLaneZone" type="Area3D" parent="DeployZones"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 8)
+collision_layer = 32
+collision_mask = 0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.574, 0.819, 0, -0.819, 0.574, 0, 22, 16)
+fov = 50.0
+
+[node name="ManaManager" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="CardDeck" type="Node" parent="."]
+script = ExtResource("4")
+
+[node name="AIOpponent" type="Node" parent="."]
+script = ExtResource("5")
+
+[node name="BattleHUD" type="CanvasLayer" parent="."]
+script = ExtResource("9")

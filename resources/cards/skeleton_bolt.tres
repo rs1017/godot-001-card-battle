@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+card_name = "Skeleton Bolt"
+mana_cost = 4
+card_category = 1
+minion_type = 1
+health = 1
+damage = 65
+attack_speed = 1.0
+move_speed = 0.1
+attack_range = 6.0
+aggro_range = 0.1
+kaykit_model_path = "res://assets/kaykit/skeletons/Skeleton_Mage.glb"
+anim_idle = "Idle"
+anim_walk = "Walking_A"
+anim_attack = "1H_Ranged_Aiming"
+anim_hit = "Hit_A"
+anim_death = "Death_A"

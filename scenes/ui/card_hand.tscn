@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/card_hand_ui.gd" id="1"]
+
+[node name="CardHand" type="HBoxContainer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -220.0
+offset_right = 340.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+script = ExtResource("1")

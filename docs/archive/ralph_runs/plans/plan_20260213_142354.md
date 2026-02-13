@@ -1,0 +1,62 @@
+﻿# Project Plan
+
+- GeneratedAt: 2026-02-13 14:23:54
+- Feature: ralph-qa-complete-cycle-6-minion-masters
+- CycleId: 6
+- ReferenceFocus: minion-masters
+- SourceInventory: reference_inventory_20260213_142354.md
+
+## 紐⑹감
+- 媛쒖슂
+- 紐⑹쟻
+- 臾몄꽌踰붿쐞
+- 移대뱶 ??援ъ꽦 洹쒖튃
+- 移대뱶 猷?- ?꾪닾 怨듭떇
+- 留??덉씤 ?ㅺ퀎
+- ?밸━/?⑤같/?좊땲硫붿씠??- 移대뱶 ?몃깽?좊━
+- 罹먮┃???ㅻ챸
+- QA(?щ????ы븿)
+
+## 媛쒖슂
+- Reference 湲곕컲 諛고? 媛쒖꽑 ?ъ씠??臾몄꽌.
+- Reference image link: images/cycle_6 (image files are managed by grapher output).
+
+## 紐⑹쟻
+- 移대뱶 ?꾪닾??pace, variety, combo, counterplay ?щ?瑜??믪씠怨? 洹쒖튃/?섏튂/UX瑜??쇨??섍쾶 ?뺤쓽.
+
+## 臾몄꽌踰붿쐞
+- 硫붿씤 ?섏씠吏遺???꾪닾 醫낅즺源뚯????꾩껜 ?먮쫫.
+- Planning data csv: data/plan_20260213_142354.csv
+
+## Phase 1. Reference Collection
+- Use eference/, esources/cards, and ssets/kaykit as the primary references.
+- Record inventory and keep diffs in eference/_reports.
+
+## Phase 2. Planning and Distribution
+- Publish the current execution plan as docs/plans/latest_plan.md.
+- Append deployment logs in docs/plans/distribution_log.md.
+
+## Phase 3. Graphics Pipeline
+- First choice: ComfyUI generated concepts.
+- Fallback choice: KayKit assets already included in repository.
+- Maintain prompt presets and usage mapping in docs/graphics/latest_graphics_strategy.md.
+
+## Phase 4. Development
+- Implement gameplay/UI changes from approved plan.
+- Track touched files and impact notes in development logs.
+- Card deck composition rule: tank/dps/range/spell/building role balance.
+- Card rule set: mana curve, summon constraints, lane targeting, counterplay windows.
+- Combat formula: damage, attack_speed, range, overtime/sudden-death scaling.
+- Map rule: lane readability, tower distance band, deploy affordance.
+- Victory/Defeat: explicit end-state criteria and UI transition animation.
+- Card inventory: rarity/cost/tag metadata and ownership status.
+- Character description: role identity, strengths, weaknesses, animation set.
+
+## Phase 5. Review
+- Run static review for regressions, state machine side effects, and data path safety.
+- Write findings and open risks in docs/reviews/review_*.md.
+
+## Phase 6. QA
+- Execute headless smoke (	ools/run_headless_smoke.bat) and manual gameplay checklist.
+- Save results in docs/qa/qa_*.md.
+- QA fun evaluation: pace, variety, combo readability, counterplay clarity.
