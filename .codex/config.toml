@@ -1,4 +1,4 @@
-web_search = "live"
+﻿web_search = "live"
 sandbox_mode = "workspace-write"
 
 [sandbox_workspace_write]
