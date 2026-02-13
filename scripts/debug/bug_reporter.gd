@@ -16,6 +16,7 @@ var _toolbar: HBoxContainer
 var _crop_rect: ColorRect
 var _dim_background: ColorRect
 var _report_panel: PanelContainer
+var _send_report_button: Button
 var _preview_rect: TextureRect
 var _badge_list_label: RichTextLabel
 var _note_input: TextEdit
@@ -132,10 +133,9 @@ func _build_toolbar() -> void:
 	_toolbar.add_theme_constant_override("separation", 20)
 	toolbar_bg.add_child(_toolbar)
 
-	_toolbar.add_child(_create_toolbar_button("Save Full", _on_save_full))
-	_toolbar.add_child(_create_toolbar_button("Crop Select", _on_crop_select))
-	_toolbar.add_child(_create_toolbar_button("Send", _on_send))
-	_toolbar.add_child(_create_toolbar_button("Close", _on_close))
+	_toolbar.add_child(_create_toolbar_button("전체 저장", _on_save_full))
+	_toolbar.add_child(_create_toolbar_button("영역 선택", _on_crop_select))
+	_toolbar.add_child(_create_toolbar_button("닫기", _on_close))
 
 
 func _build_report_panel() -> void:
@@ -197,6 +197,13 @@ func _build_report_panel() -> void:
 	_note_input.placeholder_text = "재현 스텝/기대 결과/실제 결과를 입력하세요"
 	_note_input.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
 	vbox.add_child(_note_input)
+
+	_send_report_button = Button.new()
+	_send_report_button.text = "버그 보내기"
+	_send_report_button.custom_minimum_size = Vector2(200, 42)
+	_send_report_button.add_theme_font_size_override("font_size", 18)
+	_send_report_button.pressed.connect(_on_send)
+	vbox.add_child(_send_report_button)
 
 
 func _create_toolbar_button(text: String, callback: Callable) -> Button:
@@ -341,20 +348,20 @@ func _add_ui_badges(idx: int) -> int:
 	if not battle_hud:
 		return idx
 
-	var player_hp: Label = battle_hud.get("_player_hp_label")
+	var player_hp: Label = battle_hud.get("_player_hp_label") as Label
 	if player_hp and is_instance_valid(player_hp):
 		_create_badge(idx, "Player HP Label", _get_control_screen_center(player_hp), Color(0.6, 0.2, 0.8, 0.85))
 		idx += 1
-	var timer_label: Label = battle_hud.get("_timer_label")
+	var timer_label: Label = battle_hud.get("_timer_label") as Label
 	if timer_label and is_instance_valid(timer_label):
 		_create_badge(idx, "Timer", _get_control_screen_center(timer_label), Color(0.6, 0.2, 0.8, 0.85))
 		idx += 1
-	var enemy_hp: Label = battle_hud.get("_enemy_hp_label")
+	var enemy_hp: Label = battle_hud.get("_enemy_hp_label") as Label
 	if enemy_hp and is_instance_valid(enemy_hp):
 		_create_badge(idx, "Enemy HP Label", _get_control_screen_center(enemy_hp), Color(0.6, 0.2, 0.8, 0.85))
 		idx += 1
-	var mana_progress: ProgressBar = battle_hud.get("_mana_progress")
-	var mana_label: Label = battle_hud.get("_mana_label")
+	var mana_progress: ProgressBar = battle_hud.get("_mana_progress") as ProgressBar
+	var mana_label: Label = battle_hud.get("_mana_label") as Label
 	if mana_progress and is_instance_valid(mana_progress):
 		var mana_text: String = mana_label.text.strip_edges() if mana_label else ""
 		_create_badge(idx, "Mana Bar: %s" % mana_text, _get_control_screen_center(mana_progress), Color(0.6, 0.2, 0.8, 0.85))

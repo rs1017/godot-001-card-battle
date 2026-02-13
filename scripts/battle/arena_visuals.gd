@@ -12,6 +12,7 @@ const BRIDGE_SCALE: Vector3 = Vector3(1.8, 1.8, 1.8)
 const MOUNTAIN_SCALE: Vector3 = Vector3(2.8, 2.8, 2.8)
 const GRID_X: Array[int] = [-9, -6, -3, 0, 3, 6, 9]
 const GRID_Z: Array[int] = [-12, -9, -6, -3, 0, 3, 6, 9, 12]
+static var _failed_model_paths: Dictionary = {}
 
 
 func _ready() -> void:
@@ -67,15 +68,30 @@ func _add_asset(path: String, position: Vector3, scale_value: Vector3, rot_y_deg
 
 
 func _load_model_scene(path: String) -> Node3D:
+	if _failed_model_paths.has(path):
+		return null
+
+	if path.ends_with(".gltf") or path.ends_with(".glb"):
+		var abs_path: String = ProjectSettings.globalize_path(path)
+		if not FileAccess.file_exists(abs_path):
+			_failed_model_paths[path] = true
+			return null
+		var doc: GLTFDocument = GLTFDocument.new()
+		var state: GLTFState = GLTFState.new()
+		if doc.append_from_file(abs_path, state) == OK:
+			return doc.generate_scene(state) as Node3D
+		_failed_model_paths[path] = true
+		return null
+
+	if not ResourceLoader.exists(path):
+		_failed_model_paths[path] = true
+		return null
+
 	var scene: PackedScene = load(path) as PackedScene
 	if scene:
 		return scene.instantiate()
 	if path.ends_with(".gltf") or path.ends_with(".glb"):
-		var doc: GLTFDocument = GLTFDocument.new()
-		var state: GLTFState = GLTFState.new()
-		var abs_path: String = ProjectSettings.globalize_path(path)
-		if doc.append_from_file(abs_path, state) == OK:
-			return doc.generate_scene(state) as Node3D
+		_failed_model_paths[path] = true
 	return null
 
 
