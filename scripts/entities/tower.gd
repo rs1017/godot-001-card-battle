@@ -15,6 +15,7 @@ signal tower_destroyed(tower: StaticBody3D)
 @onready var detection_area: Area3D = $DetectionArea
 @onready var attack_timer: Timer = $AttackTimer
 @onready var model_container: Node3D = $ModelContainer
+static var _failed_model_paths: Dictionary = {}
 
 
 func _ready() -> void:
@@ -44,9 +45,14 @@ func _ready() -> void:
 
 func _load_model() -> void:
 	if model_path.is_empty():
+		_create_fallback_model()
+		return
+	if _failed_model_paths.has(model_path):
+		_create_fallback_model()
 		return
 	if not ResourceLoader.exists(model_path):
 		push_warning("[Tower] Model not found: %s" % model_path)
+		_failed_model_paths[model_path] = true
 		# 폴백: 간단한 박스 메시 생성
 		_create_fallback_model()
 		return
@@ -56,6 +62,7 @@ func _load_model() -> void:
 		model_instance.scale = Vector3(1.5, 1.5, 1.5)
 		model_container.add_child(model_instance)
 	else:
+		_failed_model_paths[model_path] = true
 		_create_fallback_model()
 
 

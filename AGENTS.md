@@ -35,6 +35,8 @@
 - Git history is not available in this workspace snapshot, so use this baseline convention:
   - Commit format: `type(scope): imperative summary` (for example, `feat(battle): add lane deploy cancel`).
   - Keep commits focused; include scene, script, and resource updates together when tightly coupled.
+- Mandatory workflow rule:
+  - after every code or content modification, create a commit and push to `origin` immediately in the same task cycle.
 - PRs should include:
   - concise behavior summary and affected paths,
   - manual test steps and results,

@@ -2,7 +2,8 @@ extends Node
 ## Bug Reporter - 디버그 오버레이 도구
 ## F12 또는 BUG 버튼으로 활성화하여 오브젝트 번호 오버레이, 스크린샷, 크롭 기능 제공
 
-const SAVE_DIR: String = "user://bug_reports"
+const SAVE_DIR_USER: String = "user://bug_reports"
+const SAVE_DIR_PROJECT: String = "res://docs/qa/bug_reports"
 const BADGE_COLOR: Color = Color(0.9, 0.2, 0.2, 0.85)
 const BADGE_FONT_SIZE: int = 14
 const TOOLBAR_HEIGHT: int = 50
@@ -19,6 +20,7 @@ var _is_cropping: bool = false
 var _crop_start: Vector2 = Vector2.ZERO
 var _crop_end: Vector2 = Vector2.ZERO
 var _report_count: int = 0
+var _resolved_save_dir: String = SAVE_DIR_USER
 
 var _badge_nodes: Array[Control] = []
 var _badge_map: Dictionary = {}  # number -> description
@@ -257,7 +259,7 @@ func _add_entity_badges(idx: int) -> int:
 	var player_minions: Node = battle_arena.get_node_or_null("Entities/PlayerMinions")
 	if player_minions:
 		for minion in player_minions.get_children():
-			if minion is CharacterBody3D and not minion.is_dead():
+			if minion is CharacterBody3D and minion.has_method("is_dead") and not minion.is_dead():
 				var card_name: String = _get_minion_name(minion)
 				var hp_text: String = _get_health_text(minion)
 				var screen_pos: Vector2 = _project_to_screen(camera, minion.global_position + Vector3(0, 1.5, 0))
@@ -269,7 +271,7 @@ func _add_entity_badges(idx: int) -> int:
 	var enemy_minions: Node = battle_arena.get_node_or_null("Entities/EnemyMinions")
 	if enemy_minions:
 		for minion in enemy_minions.get_children():
-			if minion is CharacterBody3D and not minion.is_dead():
+			if minion is CharacterBody3D and minion.has_method("is_dead") and not minion.is_dead():
 				var card_name: String = _get_minion_name(minion)
 				var hp_text: String = _get_health_text(minion)
 				var screen_pos: Vector2 = _project_to_screen(camera, minion.global_position + Vector3(0, 1.5, 0))
@@ -469,8 +471,8 @@ func _get_timestamp() -> String:
 
 
 func _build_unique_save_path(base_name: String) -> Dictionary:
-	var abs_dir: String = ProjectSettings.globalize_path(SAVE_DIR)
-	var user_path: String = "%s/%s.png" % [SAVE_DIR, base_name]
+	var abs_dir: String = ProjectSettings.globalize_path(_resolved_save_dir)
+	var user_path: String = "%s/%s.png" % [_resolved_save_dir, base_name]
 	var abs_path: String = "%s/%s.png" % [abs_dir, base_name]
 
 	if not FileAccess.file_exists(abs_path):
@@ -478,7 +480,7 @@ func _build_unique_save_path(base_name: String) -> Dictionary:
 
 	# 같은 초에 반복 저장될 수 있으므로 ticks 기반 suffix를 추가해 충돌 방지.
 	var suffix: int = Time.get_ticks_msec() % 100000
-	user_path = "%s/%s_%d.png" % [SAVE_DIR, base_name, suffix]
+	user_path = "%s/%s_%d.png" % [_resolved_save_dir, base_name, suffix]
 	abs_path = "%s/%s_%d.png" % [abs_dir, base_name, suffix]
 	return {"user": user_path, "abs": abs_path}
 
@@ -537,10 +539,24 @@ func _save_crop(rect: Rect2i) -> String:
 
 
 func _ensure_save_dir() -> void:
-	var abs_dir: String = ProjectSettings.globalize_path(SAVE_DIR)
-	var mk_err: Error = DirAccess.make_dir_recursive_absolute(abs_dir)
-	if mk_err != OK and mk_err != ERR_ALREADY_EXISTS:
-		push_error("[BugReporter] Failed to create save directory: %s (error: %d)" % [abs_dir, mk_err])
+	_resolved_save_dir = SAVE_DIR_USER
+	var candidates: Array[String] = [SAVE_DIR_USER, SAVE_DIR_PROJECT]
+	for candidate in candidates:
+		var abs_dir: String = ProjectSettings.globalize_path(candidate)
+		var mk_err: Error = DirAccess.make_dir_recursive_absolute(abs_dir)
+		if mk_err != OK and mk_err != ERR_ALREADY_EXISTS:
+			continue
+		var probe_path: String = "%s/.probe_write.tmp" % abs_dir
+		var f: FileAccess = FileAccess.open(probe_path, FileAccess.WRITE)
+		if f:
+			f.store_string("ok")
+			f.close()
+			DirAccess.remove_absolute(probe_path)
+			_resolved_save_dir = candidate
+			print("[BugReporter] Save dir selected: %s" % abs_dir)
+			return
+
+	push_error("[BugReporter] No writable save directory found. Tried user:// and res://docs/qa/bug_reports")
 
 
 # === 크롭 기능 ===
@@ -609,7 +625,7 @@ func _print_report() -> void:
 
 		print("    #%02d  %s" % [key, desc])
 
-	var global_path: String = ProjectSettings.globalize_path(SAVE_DIR)
+	var global_path: String = ProjectSettings.globalize_path(_resolved_save_dir)
 	print("[BugReporter] Save directory: %s" % global_path)
 	print("")
 

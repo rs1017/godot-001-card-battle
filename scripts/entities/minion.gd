@@ -20,6 +20,7 @@ var _animation_player: AnimationPlayer
 
 
 const GRAVITY: float = 20.0
+static var _failed_model_paths: Dictionary = {}
 
 
 func _ready() -> void:
@@ -80,15 +81,24 @@ func is_dead() -> bool:
 
 func _load_model() -> void:
 	if not _card_data or _card_data.kaykit_model_path.is_empty():
+		_create_fallback_model()
+		return
+
+	if _failed_model_paths.has(_card_data.kaykit_model_path):
+		_create_fallback_model()
 		return
 
 	if not ResourceLoader.exists(_card_data.kaykit_model_path):
 		push_error("[Minion] Model not found: %s" % _card_data.kaykit_model_path)
+		_failed_model_paths[_card_data.kaykit_model_path] = true
+		_create_fallback_model()
 		return
 
 	var scene: PackedScene = load(_card_data.kaykit_model_path) as PackedScene
 	if not scene:
 		push_error("[Minion] Failed to load model: %s" % _card_data.kaykit_model_path)
+		_failed_model_paths[_card_data.kaykit_model_path] = true
+		_create_fallback_model()
 		return
 
 	var model_instance: Node3D = scene.instantiate()
@@ -110,6 +120,23 @@ func _load_model() -> void:
 		_play_anim_safe(_card_data.anim_idle)
 	else:
 		push_warning("[Minion] No AnimationPlayer found for %s" % _card_data.card_name)
+
+
+func _create_fallback_model() -> void:
+	var mesh_instance: MeshInstance3D = MeshInstance3D.new()
+	var capsule: CapsuleMesh = CapsuleMesh.new()
+	capsule.radius = 0.35
+	capsule.height = 1.0
+	mesh_instance.mesh = capsule
+	mesh_instance.position = Vector3(0, 0.8, 0)
+
+	var mat: StandardMaterial3D = StandardMaterial3D.new()
+	if team == Team.PLAYER:
+		mat.albedo_color = Color(0.25, 0.55, 0.95)
+	else:
+		mat.albedo_color = Color(0.95, 0.35, 0.25)
+	mesh_instance.material_override = mat
+	model_container.add_child(mesh_instance)
 
 
 func _find_animation_player(node: Node) -> AnimationPlayer:
