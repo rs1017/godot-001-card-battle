@@ -1,0 +1,3 @@
+screen_id,screen_name,entry_condition,exit_condition,component_id,component_type,state,event,data_source,qa_acceptance
+SCR_MAIN,메인,앱 실행 완료,시작 버튼 클릭,CMP_START_BTN,Button,default|disabled,ui.start_click,local_state,클릭 시 매치 화면 진입
+SCR_BATTLE,전투,매치 준비 완료,승패 확정,CMP_HAND,CardHand,normal|selecting|cooldown,ui.card_select;ui.card_cancel,res://resources/cards,선택/취소 동작 정상

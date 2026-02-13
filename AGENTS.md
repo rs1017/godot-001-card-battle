@@ -75,6 +75,21 @@
   - when using images, store image files under an `images/` folder and link them from markdown,
   - planning structured data must be stored as CSV (`.csv`) under `docs/plans/data/`.
   - planning document language must be Korean by default.
+  - planning structure must follow `docs/plans/templates/game_plan_format_kr.md` by default.
+  - planning topic should be narrow and executable (single feature scope first, avoid broad all-in-one themes).
+  - planning docs should include job-post requirement mapping when used as portfolio-style documents.
+  - planning docs should include gameplay-backed evidence (observations/issues/hypotheses) before solution proposals.
+  - planning docs can include reverse-design sections; use `intent -> evidence -> redesign` structure.
+  - planning docs must explicitly separate fixed vs variable items and include a decision log for changes.
+  - planning docs must include cover and table-of-contents sections for readability.
+  - planning docs should declare frame type at the top: Frame A (content-first) or Frame B (mechanics/tech-first).
+  - scenario-heavy projects should include a four-act synopsis block (기/승/전/결).
+  - battle and skill systems should include programmer handoff specs (flow, rules, variables, exceptions, tech requirements).
+  - skill docs should include animation/VFX/SFX timing guides.
+  - map-heavy plans should include map overview, connection graph, legend/icons, map parameters, region background settings, and landmark tables.
+  - UI planning docs must include screen list/objective, user flow, per-screen component/state/event spec, exception handling, and QA acceptance criteria.
+  - UI planning docs must include at least one flow diagram (Mermaid) and one component table per screen group.
+  - UI planning assets must be saved under `docs/plans/images/ui/` and UI tabular specs under `docs/plans/data/ui_*.csv`.
 - ComfyUI runtime policy:
   - ComfyUI root path is fixed to `D:\comfyUI`,
   - image generation calls must use URL/API invocation (`http://127.0.0.1:8188`) as default execution method,

@@ -21,10 +21,10 @@ function Test-IsImageFile {
 
 function Get-ScreenshotUrlsFromHtml {
 	param([string]$Html)
-	$matches = [regex]::Matches($Html, 'https://shared\.fastly\.steamstatic\.com/store_item_assets/steam/apps/\d+/ss_[a-zA-Z0-9_]+\.(jpg|png)(\?t=\d+)?')
+	$matches = [regex]::Matches($Html, "https://shared\.fastly\.steamstatic\.com/store_item_assets/steam/apps/\d+/ss_[a-zA-Z0-9_]+\.(jpg|png)(\?t=\d+)?")
 	$urls = @()
 	foreach ($m in $matches) {
-		$u = $m.Value -replace '\?t=\d+$', ''
+		$u = $m.Value -replace "\?t=\d+$", ""
 		$urls += $u
 	}
 	return $urls | Sort-Object -Unique
@@ -74,7 +74,7 @@ foreach ($t in $targets) {
 	$urls = Get-ScreenshotUrlsFromHtml -Html $html
 	foreach ($u in $urls) {
 		if ($rows.Count -ge $TargetCount) { break }
-		$tmp = Join-Path $OutRoot "_tmp_$nextId.jpg"
+		$tmp = Join-Path $OutRoot ("_tmp_{0}.jpg" -f $nextId)
 		try {
 			curl.exe -L $u -o $tmp | Out-Null
 		} catch {
@@ -109,7 +109,7 @@ foreach ($t in $targets) {
 			reason = $reason
 			source_page = $pageUrl
 			source_url = $u
-			local_path = ("docs/plans/images/game_screenshots/$batchDirName/$fileName")
+			local_path = ("docs/plans/images/game_screenshots/{0}/{1}" -f $batchDirName, $fileName)
 			sha1 = $sha1
 			bytes = (Get-Item $finalPath).Length
 		}
@@ -128,15 +128,15 @@ $md += "- GeneratedAt: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 $md += "- Total screenshots: $($rows.Count)"
 $md += ('- Target list: `' + $TargetsCsv + '`')
 $md += ('- Manifest: `' + $ManifestCsv + '`')
-$md += "- Rule: 플레이 스크린샷(ss_*.jpg)만 수집"
+$md += "- Rule: gameplay screenshots only (ss_*.jpg)"
 $md += ""
-$md += "## 배치 요약"
-$g = $rows | Group-Object { ($_.local_path -split '/')[4] } | Sort-Object Name
+$md += "## Batch Summary"
+$g = $rows | Group-Object { ($_.local_path -split "/")[4] } | Sort-Object Name
 foreach ($b in $g) {
 	$md += "- $($b.Name): $($b.Count)"
 }
 $md += ""
-$md += "## 최신 샘플 30개"
+$md += "## Latest 30"
 $preview = $rows | Sort-Object {[int]$_.id} -Descending | Select-Object -First 30 | Sort-Object {[int]$_.id}
 foreach ($r in $preview) {
 	$rel = $r.local_path.Replace("docs/plans/", "../plans/")
