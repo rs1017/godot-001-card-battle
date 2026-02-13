@@ -13,6 +13,7 @@ const MOUNTAIN_SCALE: Vector3 = Vector3(2.8, 2.8, 2.8)
 const GRID_X: Array[int] = [-9, -6, -3, 0, 3, 6, 9]
 const GRID_Z: Array[int] = [-12, -9, -6, -3, 0, 3, 6, 9, 12]
 static var _failed_model_paths: Dictionary = {}
+const USE_KAYKIT_ARENA_ASSETS: bool = false
 
 
 func _ready() -> void:
@@ -58,7 +59,9 @@ func _build_backdrop() -> void:
 
 
 func _add_asset(path: String, position: Vector3, scale_value: Vector3, rot_y_deg: float = 0.0) -> void:
-	var node: Node3D = _load_model_scene(path)
+	var node: Node3D = null
+	if USE_KAYKIT_ARENA_ASSETS:
+		node = _load_model_scene(path)
 	if not node:
 		node = _create_fallback_tile(path)
 	add_child(node)

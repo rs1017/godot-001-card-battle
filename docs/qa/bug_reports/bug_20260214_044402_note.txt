@@ -1,0 +1,21 @@
+[BugReporter] Report #1
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Player Tower (HP: 2000/2000)
+#07 Enemy Tower (HP: 2000/2000)
+#08 Enemy Skeleton Warrior (HP: 180/180)
+#09 Enemy Skeleton Warrior (HP: 180/180)
+#10 Enemy Skeleton Minion (HP: 40/40)
+#11 Enemy Skeleton Minion (HP: 40/40)
+#12 Player HP Label
+#13 Timer
+#14 Enemy HP Label
+#15 Mana Bar: 7/10
+--- Note ---
+아군 캐릭터 나오지 않음 
+- 타일 리소스 교체 필요 

@@ -1,0 +1,20 @@
+[BugReporter] Report #1
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Player Tower (HP: 1870/2000)
+#07 Enemy Tower (HP: 2000/2000)
+#08 Enemy Skeleton Minion (HP: 40/40)
+#09 Enemy Skeleton Minion (HP: 40/40)
+#10 Player HP Label
+#11 Timer
+#12 Enemy HP Label
+#13 Mana Bar: 6/10
+--- Note ---
+- 아군 생성 되지 않음
+- 캐릭터 등장 후 걷기 애니메이션 1회 재생후 애니 재생 안됨
+- 바닥 리솟스 전면 교체 요

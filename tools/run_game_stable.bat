@@ -22,10 +22,9 @@ if exist "%LOG_FILE%" del /f /q "%LOG_FILE%" >nul 2>nul
 if exist "%ERROR_LOG%" del /f /q "%ERROR_LOG%" >nul 2>nul
 
 echo [RUN] GUI: %GUI_EXE% --path . --rendering-driver opengl3 --windowed --resolution %WINDOW_RES% --position %WINDOW_POS% --log-file %LOG_FILE%
-start "" "%GUI_EXE%" --path . --rendering-driver opengl3 --windowed --resolution %WINDOW_RES% --position %WINDOW_POS% --log-file %LOG_FILE%
 
-echo [RUN] CONSOLE LOG: live game log stream from %LOG_FILE%
-start "Godot Live Console" powershell -NoLogo -NoExit -Command "Write-Host '[LIVE GAME LOG]' -ForegroundColor Cyan; Write-Host '[ERROR LOG] %ERROR_LOG%' -ForegroundColor Yellow; while (-not (Test-Path '%LOG_FILE%')) { Start-Sleep -Milliseconds 200 }; Get-Content '%LOG_FILE%' -Tail 80 -Wait | ForEach-Object { $_; if ($_ -like 'ERROR:*') { Add-Content -Path '%ERROR_LOG%' -Value $_ } }"
+echo [RUN] CONSOLE LOG: live game log stream from %LOG_FILE% (auto-close on game exit)
+start "Godot Live Console" powershell -NoLogo -ExecutionPolicy Bypass -File "tools\run_game_with_log_console.ps1" -GuiExe "%GUI_EXE%" -LogFile "%LOG_FILE%" -ErrorLog "%ERROR_LOG%" -Resolution "%WINDOW_RES%" -Position "%WINDOW_POS%"
 
 popd
 exit /b 0

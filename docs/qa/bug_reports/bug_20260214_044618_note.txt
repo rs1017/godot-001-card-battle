@@ -1,0 +1,23 @@
+[BugReporter] Report #1
+ScreenshotDir: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+--- Badges ---
+#01 Left Lane
+#02 Right Lane
+#03 River (Center)
+#04 Player Territory
+#05 Enemy Territory
+#06 Player Tower (HP: 2000/2000)
+#07 Enemy Tower (HP: 2000/2000)
+#08 Enemy Skeleton Minion (HP: 40/40)
+#09 Enemy Skeleton Minion (HP: 10/40)
+#10 Enemy Skeleton Minion (HP: 40/40)
+#11 Enemy Skeleton Minion (HP: 40/40)
+#12 Player HP Label
+#13 Timer
+#14 Enemy HP Label
+#15 Mana Bar: 8/10
+--- Note ---
+여전히 바닥 리솟는 교체 안됨
+- 아쿤의 미니언은 왜 나오지 않니? 
+0 나와서 전투를 해야 하는데
+- 이 버그 넣는  투명창에 버그리포트에 포함 되어서는 안된다.

@@ -24,8 +24,8 @@ func _ensure_cards_loaded() -> void:
 	_cards_loaded = true
 	_player_cards = _load_cards([
 		"res://resources/cards/knight.tres",
-		"res://resources/cards/fireball.tres",
-		"res://resources/cards/guard_tower.tres",
+		"res://resources/cards/mage.tres",
+		"res://resources/cards/barbarian.tres",
 		"res://resources/cards/rogue.tres",
 	])
 	_enemy_cards = _load_cards([
