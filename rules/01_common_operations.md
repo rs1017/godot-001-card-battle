@@ -29,3 +29,11 @@
 ## Runtime Error Fix Policy
 - If runtime `ERROR:` lines are logged, treat them as actionable defects in the same task cycle.
 - Apply code/resource fixes, rerun smoke/run checks, and verify the error line is resolved.
+
+## 프롬프트 로그 규칙 (Codex CLI)
+- Codex CLI 작업에서는 사용자의 새 프롬프트가 들어올 때마다, 별도 요청 없이 자동 저장한다.
+- 저장 경로: `docs/prompts/prompt_YYYYMMDD_HHMMSS.txt`
+- 파일 형식:
+  - 첫 줄: `[Saved Prompt]`
+  - 이후 줄: 사용자 프롬프트 원문
+- 프롬프트 저장은 매 턴 필수이며, 같은 작업 사이클 안에서 수행한다.

@@ -153,3 +153,11 @@
   - enforce hash-based dedupe.
 
 
+
+## Codex Prompt Logging Policy
+- In Codex CLI tasks, the assistant must save each new user prompt automatically without requiring a separate "save prompt" request.
+- Save path: `docs/prompts/prompt_YYYYMMDD_HHMMSS.txt`.
+- File content format:
+  - first line: `[Saved Prompt]`
+  - following lines: raw user prompt text
+- This logging step is mandatory for every user turn and must be executed in the same task cycle as the response.

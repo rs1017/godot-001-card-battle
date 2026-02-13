@@ -25,3 +25,10 @@
 - Keep generated historical outputs in `docs/archive/ralph_runs/`.
 - Keep active outputs in `docs/plans`, `docs/references`, `docs/graphics`, `docs/reviews`, `docs/qa`.
 - For web references in planning docs, store local screenshots under `docs/plans/images/` and link local files.
+
+## Prompt Logging
+- For Codex CLI turns, save every incoming user prompt automatically in the same response cycle.
+- Path: `docs/prompts/prompt_YYYYMMDD_HHMMSS.txt`
+- Format:
+  - line 1: `[Saved Prompt]`
+  - line 2+: raw user prompt text
