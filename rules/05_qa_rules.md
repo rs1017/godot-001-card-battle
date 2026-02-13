@@ -1,31 +1,13 @@
-﻿# QA Rules
+﻿# QA 규칙
 
-## 1. QA Gate
-1. 紐⑤뱺 ?ъ씠?댁? ?ㅻえ???듦낵 ???꾨즺 泥섎━ 湲덉?.
-2. 湲곕낯 ?ㅻえ??紐낅졊? `tools/run_headless_smoke.bat`瑜??ъ슜?쒕떎.
-3. QA 寃곌낵??`docs/qa/qa_YYYYMMDD_HHMMSS.md` ?뺤떇?쇰줈 湲곕줉?쒕떎.
+## 기본 검증
+- 헤드리스 스모크: `tools\run_headless_smoke.bat`
+- 기능 체크: 입력/마나/스폰/상태 전환/승패/일시정지
 
-## 2. Mandatory Functional Checks
-1. 移대뱶 ?좏깮/痍⑥냼 ?낅젰
-2. 留덈굹 蹂댁쑀/?뚮え/遺議?泥섎━
-3. 誘몃땲???ㅽ룿 諛??곹깭 ?꾩씠
-4. ????諛??쇱떆?뺤? ?곹깭 ?꾩씠
+## 리포트
+- QA 문서: `docs/qa/qa_YYYYMMDD_HHMMSS.md`
+- 버그 스크린샷: `docs/qa/bug_reports/`
+- 실패 시 재현 절차와 로그를 포함한다.
 
-## 3. Bug Reporting Rules
-1. ?ы쁽 ?덉감??`?섍꼍 -> ?④퀎 -> ?ㅼ젣/湲곕? 寃곌낵` 3以?洹쒖튃?쇰줈 湲곕줉?쒕떎.
-2. ?ㅽ겕由곗꺑? `docs/qa/bug_reports/`????ν븳??
-3. 濡쒓렇/罹≪쿂 ?뚯씪紐낆? ?쒓컖 湲곕컲?쇰줈 ?묒꽦?쒕떎.
-
-## 4. Review Agent Loop
-1. 媛??ъ씠?댁뿉??`tools/review_agent_validate.ps1` 寃利앹쓣 ?섑뻾?쒕떎.
-2. 寃利??ㅽ뙣 ???깃났 ?곗냽 移댁슫?몃뒗 由ъ뀑?쒕떎.
-3. 諛섎젮 ?ъ쑀???ㅼ쓬 ?ъ씠??怨꾪쉷??諛섏쁺?쒕떎.
-
-## 5. Quality Criteria
-1. 湲곕뒫 ?뺤긽 ?몄뿉 ?щ? ?먯닔(fun-score) 寃뚯씠?몃? 湲곕줉?쒕떎.
-2. ?붿뿬 由ъ뒪?ъ? 誘멸?利?踰붿쐞瑜?諛섎뱶???④릿??
-
-## 6. Bug Reporter UI Acceptance
-1. When the bug button is pressed, the `버그 보내기` button must be visible.
-2. The `버그 보내기` button must be actionable (click input accepted and report flow continues).
-3. If the button is missing, mark QA as fail and block release for that cycle.
+## 게이트
+- 스모크 PASS 없이 완료 처리 금지

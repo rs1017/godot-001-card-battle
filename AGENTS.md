@@ -40,7 +40,7 @@
   - mana spend/afford flow,
   - minion spawn and state transitions,
   - win/lose and pause state changes.
-  - bug reporter UI flow: when bug button is pressed, `踰꾧렇 蹂대궡湲? button must be visible and actionable.
+  - bug reporter UI flow: when bug button is pressed, `버그 보내기` button must be visible and actionable.
 - When adding tests later, use a `tests/` root and mirror feature folders (for example, `tests/battle/`).
 
 ## Commit & Pull Request Guidelines
@@ -95,7 +95,7 @@
   - planning docs must explicitly separate fixed vs variable items and include a decision log for changes.
   - planning docs must include cover and table-of-contents sections for readability.
   - planning docs should declare frame type at the top: Frame A (content-first) or Frame B (mechanics/tech-first).
-  - scenario-heavy projects should include a four-act synopsis block (湲?????寃?.
+  - scenario-heavy projects should include a four-act synopsis block (기/승/전/결).
   - battle and skill systems should include programmer handoff specs (flow, rules, variables, exceptions, tech requirements).
   - skill docs should include animation/VFX/SFX timing guides.
   - map-heavy plans should include map overview, connection graph, legend/icons, map parameters, region background settings, and landmark tables.

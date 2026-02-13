@@ -1,23 +1,21 @@
-﻿# Project Rules Index
+﻿# Rules 인덱스
 
-???대뜑??`godot-001-card-battle` ?꾨줈?앺듃 ?댁쁺 洹쒖튃???⑥씪 吏꾩엯?먯씠??
+## 우선순위
+1. 사용자 직접 지시
+2. `AGENTS.md`
+3. `rules/*.md`
+4. 기타 문서
 
-## Rule Set
-- `rules/01_common_operations.md`: ????븷 怨듯넻 ?댁쁺 洹쒖튃
-- `rules/02_developer_rules.md`: ?꾨줈洹몃옒癒?肄붾뵫/媛쒕컻 洹쒖튃
-- `rules/03_planner_rules.md`: 湲고쉷??臾몄꽌/?ㅽ럺 洹쒖튃
-- `rules/04_graphics_rules.md`: 洹몃옒???쒖옉/?먯뀑 洹쒖튃
-- `rules/05_qa_rules.md`: QA ?ㅽ뻾/湲곕줉 洹쒖튃
-- `rules/06_git_review_release_rules.md`: Git/由щ럭/由대━利?洹쒖튃
-- `rules/07_role_ownership_raci.md`: ??븷 梨낆엫/?뱀씤 泥닿퀎
-- `rules/08_workspace_methodology.md`: ?뚰겕?ㅽ럹?댁뒪 ?댁쁺 諛⑸쾿濡?諛섎났/?쇰뱶諛?諛섏쁺)
+## 규칙 문서
+- `rules/01_common_operations.md`: 공통 운영 규칙
+- `rules/02_developer_rules.md`: 개발 규칙
+- `rules/03_planner_rules.md`: 기획 규칙
+- `rules/04_graphics_rules.md`: 그래픽 규칙
+- `rules/05_qa_rules.md`: QA 규칙
+- `rules/06_git_review_release_rules.md`: Git/리뷰/릴리즈 규칙
+- `rules/07_role_ownership_raci.md`: 역할/책임
+- `rules/08_workspace_methodology.md`: 작업 방식
 
-## Priority
-1. ?ъ슜??吏곸젒 吏??2. `AGENTS.md`
-3. `rules/*.md` (???대뜑)
-4. 湲고? 臾몄꽌
-
-## Change Control
-1. 猷?蹂寃쎌? 諛섎뱶??PR/而ㅻ컠 硫붿떆吏??紐⑹쟻怨??곹뼢 踰붿쐞瑜?紐낆떆?쒕떎.
-2. 猷?蹂寃???媛숈? ?묒뾽 ?댁뿉??愿???쒗뵆由?泥댄겕由ъ뒪?몃? 媛숈씠 ?낅뜲?댄듃?쒕떎.
-3. 猷?異⑸룎 ??`AGENTS.md`瑜??곗꽑?섍퀬, 異⑸룎 ?댁뿭??`docs/reviews/`??湲곕줉?쒕떎.
+## 변경 원칙
+- 규칙 변경은 같은 작업 사이클에 문서/코드 반영을 완료한다.
+- 규칙 충돌 시 `AGENTS.md`를 우선한다.

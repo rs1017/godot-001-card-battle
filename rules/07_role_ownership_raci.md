@@ -1,30 +1,16 @@
-﻿# Role Ownership RACI
+﻿# 역할/책임 (RACI)
 
-## 1. Purpose
-1. ??븷 媛??뱀씤 寃쎄퀎瑜?紐낇솗????蹂묐ぉ怨?梨낆엫 怨듬갚??以꾩씤??
-2. `R`(Responsible), `A`(Accountable), `C`(Consulted), `I`(Informed)濡??댁쁺?쒕떎.
+## Planner
+- 계획 문서 구조/규칙/수용 기준 관리
 
-## 2. Core Decision Matrix
-| Topic | R | A | C | I |
-|---|---|---|---|---|
-| ?꾪닾 洹쒖튃 蹂寃?| Developer | Tech Lead | Planner, QA | Graphics |
-| 諛몃윴???섏튂 蹂寃?| Planner | Game Director | Developer, QA | Graphics |
-| UI ?먮쫫 蹂寃?| Planner | Product Owner | Developer, QA | Graphics |
-| ?꾪듃 ?ㅽ???蹂寃?| Graphics | Art Lead | Planner, QA | Developer |
-| ?먯뀑 援먯껜/異붽? | Graphics | Art Lead | Developer | QA |
-| QA 湲곗? 蹂寃?| QA | QA Lead | Planner, Developer | Graphics |
-| 由대━利??뱀씤 | QA Lead | Product Owner | Tech Lead, Art Lead | All |
+## Developer
+- 코드 구현, 실행 검증, 회귀 방지
 
-## 3. Approval Rules
-1. `A`媛 鍮꾩뼱 ?덈뒗 ??ぉ? ?묒뾽 李⑹닔 湲덉?.
-2. `A` 蹂寃???臾몄꽌? ?ㅼ젣 ?뱀씤 猷⑦듃瑜??숈떆??媛깆떊?쒕떎.
-3. 湲닿툒 ?섏젙?대씪???ы썑 24?쒓컙 ???뱀씤 濡쒓렇瑜??④릿??
+## Graphics
+- 레퍼런스 기반 이미지 전략 및 요청서 작성
 
-## 4. Handoff Rules
-1. 湲고쉷 -> 媛쒕컻 ?멸퀎 ?? 洹쒖튃, 蹂?? ?덉쇅, ?꾨즺 議곌굔???꾩닔 ?꾨떖?쒕떎.
-2. 洹몃옒??-> 媛쒕컻 ?멸퀎 ?? ?뚯씪 寃쎈줈, ?щ㎎, ?ㅼ??? pivot 洹쒖튃???꾨떖?쒕떎.
-3. 媛쒕컻 -> QA ?멸퀎 ?? ?뚯뒪???ъ씤?? ?꾪뿕 援ш컙, ?뚮젮吏??쒗븳???꾨떖?쒕떎.
+## QA
+- 스모크/수동 검증, 결함 기록, 게이트 판정
 
-## 5. Escalation
-1. 異⑸룎 ?닿껐 ?쒓컙 1??珥덇낵 ??`A`媛 理쒖쥌 寃곗젙???대┛??
-2. 諛섎났 異⑸룎 ??ぉ? ?붽컙 猷?媛쒖젙 ?덇굔?쇰줈 ?밴꺽?쒕떎.
+## 공통
+- 산출물 경로/네이밍/아카이브 정책 준수
