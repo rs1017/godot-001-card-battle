@@ -67,7 +67,7 @@ collision_layer = 8
 script = ExtResource("6")
 team = 0
 tower_damage = 30
-model_path = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/blue/building_castle_blue.gltf"
+model_path = ""
 
 [node name="ModelContainer" type="Node3D" parent="Entities/PlayerTower"]
 
@@ -125,7 +125,7 @@ collision_layer = 16
 script = ExtResource("6")
 team = 1
 tower_damage = 30
-model_path = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/red/building_castle_red.gltf"
+model_path = ""
 
 [node name="ModelContainer" type="Node3D" parent="Entities/EnemyTower"]
 

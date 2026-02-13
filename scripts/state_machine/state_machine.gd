@@ -79,8 +79,6 @@ func setup(character: CharacterBody3D, animation_player: AnimationPlayer) -> voi
 
 
 func _collect_states() -> void:
-	if not _states.is_empty():
-		return
 	for state in _states.values():
 		if state and state.transition_requested.is_connected(_on_transition_requested):
 			state.transition_requested.disconnect(_on_transition_requested)

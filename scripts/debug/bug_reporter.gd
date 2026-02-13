@@ -234,6 +234,10 @@ func _activate() -> void:
 	_is_cropping = false
 	_report_count += 1
 	get_tree().paused = true
+	if _note_input:
+		_note_input.text = ""
+	if _status_label:
+		_status_label.text = ""
 
 	_build_badges()
 	_print_report()
@@ -252,6 +256,10 @@ func _deactivate() -> void:
 	_overlay_container.visible = false
 	_report_panel.visible = false
 	_bug_button.visible = true
+	if _note_input:
+		_note_input.text = ""
+	if _status_label:
+		_status_label.text = ""
 	get_tree().paused = false
 
 
@@ -630,8 +638,27 @@ func _on_save_note() -> void:
 func _on_send() -> void:
 	if _send_report_button:
 		_send_report_button.disabled = true
-	var image_path: String = _save_screenshot_with_fallback(true)
+
+	# Do not include the transparent bug-report overlay in the saved screenshot.
+	if _report_panel:
+		_report_panel.visible = false
+	if _toolbar and _toolbar.get_parent():
+		_toolbar.get_parent().visible = false
+	if _dim_background:
+		_dim_background.visible = false
+	if _crop_rect:
+		_crop_rect.visible = false
+	await RenderingServer.frame_post_draw
+
+	var image_path: String = _save_screenshot_with_fallback(false)
 	_on_save_note()
+
+	if _dim_background:
+		_dim_background.visible = true
+	if _toolbar and _toolbar.get_parent():
+		_toolbar.get_parent().visible = true
+	if _report_panel:
+		_report_panel.visible = true
 	if image_path.is_empty():
 		push_warning("[BugReporter] Send failed: screenshot not saved")
 		if _status_label:

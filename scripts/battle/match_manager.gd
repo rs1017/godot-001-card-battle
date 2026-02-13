@@ -64,10 +64,7 @@ func _start_match() -> void:
 	_sudden_death_elapsed = 0.0
 	GameManager.change_state(GameManager.GameState.BATTLE_PLAYING)
 
-	# 플레이어 덱 설정
-	if card_deck and card_deck.has_method("setup_player_deck"):
-		card_deck.setup_player_deck()
-	else:
+	if not (card_deck and card_deck.has_method("setup_player_deck")):
 		push_error("[MatchManager] CardDeck is missing setup_player_deck().")
 		return
 
@@ -112,9 +109,17 @@ func _start_match() -> void:
 		if not battle_hud.lane_selected.is_connected(_on_lane_selected):
 			battle_hud.lane_selected.connect(_on_lane_selected)
 
-	# 초기 HUD 업데이트
+	# HUD 초기 상태 동기화 후 덱을 구성한다.
+	# (hand_changed를 먼저 연결하지 않으면 첫 핸드가 UI에 표시되지 않는다.)
 	if battle_hud and battle_hud.has_method("setup"):
 		battle_hud.setup(player_tower, enemy_tower, card_deck)
+	if mana_manager and battle_hud and battle_hud.has_method("_on_mana_changed"):
+		battle_hud._on_mana_changed(mana_manager.current_mana, mana_manager.MAX_MANA)
+	card_deck.setup_player_deck()
+	if battle_hud and battle_hud.has_method("_on_hand_changed") and card_deck.has_method("get_hand"):
+		battle_hud._on_hand_changed(card_deck.get_hand())
+
+	# 초기 HUD 업데이트
 	_update_hud_phase_timer()
 
 	EventBus.match_started.emit()
