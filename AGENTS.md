@@ -15,6 +15,7 @@
 - Run game (console): `Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64_console.exe --path .`
 - Headless quick check (safe wrapper): `tools\run_headless_smoke.bat`
 - Recreate local links (`Engine`, `reference`, `godot-game`): `.\godot_setup_link.bat`
+- Stable run rule: use `tools\run_game_stable.bat` (GUI + console together) and enforce windowed mode (`--windowed`).
 
 ## Runtime Error Runbook
 - When runtime startup fails, run in this order:
@@ -39,6 +40,7 @@
   - mana spend/afford flow,
   - minion spawn and state transitions,
   - win/lose and pause state changes.
+  - bug reporter UI flow: when bug button is pressed, `버그 보내기` button must be visible and actionable.
 - When adding tests later, use a `tests/` root and mirror feature folders (for example, `tests/battle/`).
 
 ## Commit & Pull Request Guidelines

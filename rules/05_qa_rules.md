@@ -24,3 +24,8 @@
 ## 5. Quality Criteria
 1. ê¸°ëŠ¥ ì •ìƒ ì™¸ì— ì¬ë¯¸ ì ìˆ˜(fun-score) ê²Œì´íŠ¸ë¥¼ ê¸°ë¡í•œë‹¤.
 2. ì”ì—¬ ë¦¬ìŠ¤í¬ì™€ ë¯¸ê²€ì¦ ë²”ìœ„ë¥¼ ë°˜ë“œì‹œ ë‚¨ê¸´ë‹¤.
+
+## 6. Bug Reporter UI Acceptance
+1. When the bug button is pressed, the `¹ö±× º¸³»±â` button must be visible.
+2. The `¹ö±× º¸³»±â` button must be actionable (click input accepted and report flow continues).
+3. If the button is missing, mark QA as fail and block release for that cycle.

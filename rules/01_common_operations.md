@@ -44,7 +44,8 @@
 `tools\run_headless_smoke.bat`
 2. Stable game run command:
 `tools\run_game_stable.bat`
-3. Direct launch fallback (GUI):
+3. Stable run must launch GUI and console together, and enforce windowed mode (`--windowed`).
+4. Direct launch fallback (GUI):
 `Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe --path . --rendering-driver opengl3`
 
 ## 9. Runtime Startup Error Runbook
