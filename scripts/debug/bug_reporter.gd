@@ -20,6 +20,7 @@ var _send_report_button: Button
 var _preview_rect: TextureRect
 var _badge_list_label: RichTextLabel
 var _note_input: TextEdit
+var _status_label: Label
 
 var _is_active: bool = false
 var _is_cropping: bool = false
@@ -204,6 +205,12 @@ func _build_report_panel() -> void:
 	_send_report_button.add_theme_font_size_override("font_size", 18)
 	_send_report_button.pressed.connect(_on_send)
 	vbox.add_child(_send_report_button)
+
+	_status_label = Label.new()
+	_status_label.add_theme_font_size_override("font_size", 14)
+	_status_label.add_theme_color_override("font_color", Color(0.9, 0.95, 1.0, 0.9))
+	_status_label.text = ""
+	vbox.add_child(_status_label)
 
 
 func _create_toolbar_button(text: String, callback: Callable) -> Button:
@@ -527,6 +534,23 @@ func _save_crop(rect: Rect2i) -> String:
 	return save_paths["user"]
 
 
+func _save_screenshot_with_fallback(with_overlay: bool) -> String:
+	var original_dir: String = _resolved_save_dir
+	var result: String = _save_screenshot(with_overlay)
+	if not result.is_empty():
+		return result
+
+	# Retry once on the alternate writable target.
+	if _resolved_save_dir == SAVE_DIR_PROJECT:
+		_resolved_save_dir = SAVE_DIR_USER
+	else:
+		_resolved_save_dir = SAVE_DIR_PROJECT
+	result = _save_screenshot(with_overlay)
+	if result.is_empty():
+		_resolved_save_dir = original_dir
+	return result
+
+
 func _ensure_save_dir() -> bool:
 	_resolved_save_dir = SAVE_DIR_USER
 	var candidates: Array[String] = [SAVE_DIR_PROJECT, SAVE_DIR_USER]
@@ -604,12 +628,24 @@ func _on_save_note() -> void:
 
 
 func _on_send() -> void:
-	var image_path: String = _save_screenshot(true)
+	if _send_report_button:
+		_send_report_button.disabled = true
+	var image_path: String = _save_screenshot_with_fallback(true)
 	_on_save_note()
 	if image_path.is_empty():
 		push_warning("[BugReporter] Send failed: screenshot not saved")
+		if _status_label:
+			_status_label.text = "전송 실패: 스크린샷 저장에 실패했습니다."
+		if _send_report_button:
+			_send_report_button.disabled = false
 		return
 	print("[BugReporter] Sent report (local save): %s" % image_path)
+	if _status_label:
+		_status_label.text = "전송 완료: %s" % ProjectSettings.globalize_path(image_path)
+	await get_tree().create_timer(0.35).timeout
+	if _send_report_button:
+		_send_report_button.disabled = false
+	_deactivate()
 
 
 func _on_close() -> void:
