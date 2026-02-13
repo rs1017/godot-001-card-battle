@@ -38,3 +38,21 @@
 1. 기획/규칙 변경은 `무엇`, `왜`, `영향 범위` 3요소를 기록한다.
 2. 변경 전/후 기준값이 있으면 수치로 남긴다.
 3. 승인자와 승인 시각을 기록한다.
+
+## 8. Build and Run Method
+1. Build/smoke verification must run first:
+`tools\run_headless_smoke.bat`
+2. Stable game run command:
+`tools\run_game_stable.bat`
+3. Direct launch fallback (GUI):
+`Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe --path . --rendering-driver opengl3`
+
+## 9. Runtime Startup Error Runbook
+1. If startup fails, run checks in this order:
+`run_headless_smoke.bat -> run_game_stable.bat -> direct GUI fallback`
+2. If this error appears, apply fallback immediately:
+`Could not create directory: 'user://logs'`
+3. When the `user://logs` error occurs:
+- Treat console launch as unstable for that session.
+- Use GUI launch path as temporary default.
+- Record failure text in QA/review log and verify `user://` write permission and logging path settings before restoring console-first flow.

@@ -16,6 +16,16 @@
 - Headless quick check (safe wrapper): `tools\run_headless_smoke.bat`
 - Recreate local links (`Engine`, `reference`, `godot-game`): `.\godot_setup_link.bat`
 
+## Runtime Error Runbook
+- When runtime startup fails, run in this order:
+  1) `tools\run_headless_smoke.bat`
+  2) `tools\run_game_stable.bat`
+  3) direct GUI fallback: `Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe --path . --rendering-driver opengl3`
+- If `Could not create directory: 'user://logs'` appears:
+  - treat console launch as unstable for that session,
+  - use GUI launch path above as default temporary run path,
+  - log the failure text in QA/dev log and inspect `user://` write permissions and startup logging path configuration before re-enabling console-first runs.
+
 ## Coding Style & Naming Conventions
 - Use GDScript (Godot 4 syntax), tabs for indentation, and explicit type hints where practical.
 - File names: `snake_case.gd`; scene names: `snake_case.tscn`; class/type names and enums: `PascalCase`.
@@ -37,6 +47,7 @@
   - Keep commits focused; include scene, script, and resource updates together when tightly coupled.
 - Mandatory workflow rule:
   - after every code or content modification, create a commit and push to `origin` immediately in the same task cycle.
+  - when rule-covered content changes, mirror the change in the corresponding markdown under `rules/` in the same task cycle.
 - PRs should include:
   - concise behavior summary and affected paths,
   - manual test steps and results,
