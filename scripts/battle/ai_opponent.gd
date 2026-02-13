@@ -25,7 +25,7 @@ func start() -> void:
 	_is_active = true
 	_ai_mana = 5.0
 	_elapsed_time = 0.0
-	_next_play_time = randf_range(3.0, 5.0)
+	_next_play_time = randf_range(0.3, 0.5)
 	_last_lane = -1
 
 	# AI 전용 카드 덱 설정
@@ -50,7 +50,7 @@ func _process(delta: float) -> void:
 	_ai_timer += delta
 	if _ai_timer >= _next_play_time:
 		_ai_timer = 0.0
-		_next_play_time = randf_range(3.0, 7.0)
+		_next_play_time = randf_range(0.3, 0.7)
 		_try_play_card()
 
 

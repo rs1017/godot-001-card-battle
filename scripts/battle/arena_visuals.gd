@@ -1,6 +1,5 @@
-extends Node3D
-## 전장 비주얼 생성
-## 레인 경로, 강, 다리, 영역 구분선 등을 런타임에 생성합니다.
+﻿extends Node3D
+## Arena visual generator.
 
 
 func _ready() -> void:
@@ -11,9 +10,7 @@ func _ready() -> void:
 
 
 func _create_lane_paths() -> void:
-	# 좌측 레인 도로
 	_create_lane_strip(Vector3(-3, 0.01, 0), Vector3(1.5, 0.05, 22), Color(0.45, 0.4, 0.35, 0.6))
-	# 우측 레인 도로
 	_create_lane_strip(Vector3(3, 0.01, 0), Vector3(1.5, 0.05, 22), Color(0.45, 0.4, 0.35, 0.6))
 
 
@@ -32,7 +29,6 @@ func _create_lane_strip(pos: Vector3, size: Vector3, color: Color) -> void:
 
 
 func _create_river() -> void:
-	# 중앙 강 (z=0, x 전체)
 	var river: MeshInstance3D = MeshInstance3D.new()
 	var box: BoxMesh = BoxMesh.new()
 	box.size = Vector3(20, 0.08, 1.5)
@@ -45,9 +41,7 @@ func _create_river() -> void:
 	river.position = Vector3(0, 0.02, 0)
 	add_child(river)
 
-	# 좌측 다리
 	_create_bridge(Vector3(-3, 0.05, 0))
-	# 우측 다리
 	_create_bridge(Vector3(3, 0.05, 0))
 
 
@@ -65,9 +59,7 @@ func _create_bridge(pos: Vector3) -> void:
 
 
 func _create_territory_lines() -> void:
-	# 플레이어 영역 라인 (z=6)
 	_create_line(Vector3(0, 0.02, 6), Vector3(20, 0.02, 0.1), Color(0.3, 0.5, 0.9, 0.4))
-	# 적 영역 라인 (z=-6)
 	_create_line(Vector3(0, 0.02, -6), Vector3(20, 0.02, 0.1), Color(0.9, 0.3, 0.3, 0.4))
 
 
@@ -86,7 +78,6 @@ func _create_line(pos: Vector3, size: Vector3, color: Color) -> void:
 
 
 func _create_side_walls() -> void:
-	# 좌우 벽 (투명한 장식 벽)
 	_create_wall_strip(Vector3(-9, 0.3, 0), Vector3(0.3, 0.6, 24), Color(0.3, 0.3, 0.3, 0.3))
 	_create_wall_strip(Vector3(9, 0.3, 0), Vector3(0.3, 0.6, 24), Color(0.3, 0.3, 0.3, 0.3))
 

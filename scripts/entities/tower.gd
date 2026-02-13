@@ -56,14 +56,25 @@ func _load_model() -> void:
 		# 폴백: 간단한 박스 메시 생성
 		_create_fallback_model()
 		return
-	var scene: PackedScene = load(model_path) as PackedScene
-	if scene:
-		var model_instance: Node3D = scene.instantiate()
+	var model_instance: Node3D = _load_model_scene(model_path)
+	if model_instance:
 		model_instance.scale = Vector3(1.5, 1.5, 1.5)
 		model_container.add_child(model_instance)
 	else:
 		_failed_model_paths[model_path] = true
 		_create_fallback_model()
+
+
+func _load_model_scene(path: String) -> Node3D:
+	var scene: PackedScene = load(path) as PackedScene
+	if scene:
+		return scene.instantiate()
+	if path.ends_with(".glb") or path.ends_with(".gltf"):
+		var doc: GLTFDocument = GLTFDocument.new()
+		var state: GLTFState = GLTFState.new()
+		if doc.append_from_file(path, state) == OK:
+			return doc.generate_scene(state) as Node3D
+	return null
 
 
 func _create_fallback_model() -> void:

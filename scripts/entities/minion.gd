@@ -94,14 +94,13 @@ func _load_model() -> void:
 		_create_fallback_model()
 		return
 
-	var scene: PackedScene = load(_card_data.kaykit_model_path) as PackedScene
-	if not scene:
+	var model_instance: Node3D = _load_model_scene(_card_data.kaykit_model_path)
+	if not model_instance:
 		push_error("[Minion] Failed to load model: %s" % _card_data.kaykit_model_path)
 		_failed_model_paths[_card_data.kaykit_model_path] = true
 		_create_fallback_model()
 		return
 
-	var model_instance: Node3D = scene.instantiate()
 	model_instance.scale = Vector3(0.6, 0.6, 0.6)
 
 	# 적 팀은 플레이어 방향(+Z)을 바라보도록 회전
@@ -120,6 +119,18 @@ func _load_model() -> void:
 		_play_anim_safe(_card_data.anim_idle)
 	else:
 		push_warning("[Minion] No AnimationPlayer found for %s" % _card_data.card_name)
+
+
+func _load_model_scene(path: String) -> Node3D:
+	var scene: PackedScene = load(path) as PackedScene
+	if scene:
+		return scene.instantiate()
+	if path.ends_with(".glb") or path.ends_with(".gltf"):
+		var doc: GLTFDocument = GLTFDocument.new()
+		var state: GLTFState = GLTFState.new()
+		if doc.append_from_file(path, state) == OK:
+			return doc.generate_scene(state) as Node3D
+	return null
 
 
 func _create_fallback_model() -> void:

@@ -419,6 +419,7 @@ func _resolve_enemy_card(card: CardData, lane_index: int) -> bool:
 	match category:
 		CardData.CardCategory.TROOP:
 			spawn_enemy_minion(card, lane_index)
+			spawn_enemy_minion(card, lane_index)
 			return true
 		CardData.CardCategory.SPELL:
 			return _cast_spell(card, lane_index, false)
