@@ -5,7 +5,7 @@ set "PROJECT_DIR=%~dp0.."
 pushd "%PROJECT_DIR%"
 
 set "GUI_EXE=Engine\Godot_v4.5.1-stable_mono_win64\Godot_v4.5.1-stable_mono_win64.exe"
-set "LOG_DIR=gamelogs"
+set "LOG_DIR=docs\qa\bug_reports"
 set "LOG_FILE=%LOG_DIR%\godot-live.log"
 set "ERROR_LOG=%LOG_DIR%\godot-errors.log"
 set "WINDOW_RES=1600x900"

@@ -18,5 +18,5 @@
 - 전송 실패 시 사용자에게 실패 메시지가 보여야 하며 QA 실패로 처리한다.
 
 ## Runtime Error Log Gate
-- During QA run, check `gamelogs/godot-errors.log`.
+- During QA run, check `docs/qa/bug_reports/godot-errors.log`.
 - If new runtime `ERROR:` lines exist, QA is fail until corresponding fixes are verified.

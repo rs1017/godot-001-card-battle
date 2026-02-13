@@ -1,4 +1,4 @@
-ï»¿# Repository Guidelines
+# Repository Guidelines
 
 ## Project Structure & Module Organization
 - `project.godot` is the Godot 4.5 project entry; `scenes/main.tscn` is the main scene.
@@ -16,8 +16,8 @@
 - Headless quick check (safe wrapper): `tools\run_headless_smoke.bat`
 - Recreate local links (`Engine`, `reference`, `godot-game`): `.\godot_setup_link.bat`
 - Stable run rule: use `tools\run_game_stable.bat` (GUI + console together) and enforce windowed mode (`--windowed`).
-  - runtime log file: `gamelogs/godot-live.log`
-  - extracted error log file: `gamelogs/godot-errors.log`
+  - runtime log file: `docs/qa/bug_reports/godot-live.log`
+  - extracted error log file: `docs/qa/bug_reports/godot-errors.log`
 
 ## Runtime Error Runbook
 - When runtime startup fails, run in this order:
@@ -29,7 +29,7 @@
   - use GUI launch path above as default temporary run path,
   - log the failure text in QA/dev log and inspect `user://` write permissions and startup logging path configuration before re-enabling console-first runs.
 - If runtime `ERROR:` log lines are generated:
-  - capture and track them from `gamelogs/godot-errors.log`,
+  - capture and track them from `docs/qa/bug_reports/godot-errors.log`,
   - fix those errors in the same task cycle,
   - rerun smoke/run verification and confirm the error line is resolved.
 
@@ -47,8 +47,8 @@
   - minion spawn and state transitions,
   - win/lose and pause state changes.
   - bug reporter UI flow:
-    - when bug button is pressed, `ë²„ê·¸ ë³´ë‚´ê¸°` button must be visible,
-    - pressing `ë²„ê·¸ ë³´ë‚´ê¸°` must save report artifacts (screenshot/note) under `docs/qa/bug_reports/`,
+    - when bug button is pressed, `¹ö±× º¸³»±â` button must be visible,
+    - pressing `¹ö±× º¸³»±â` must save report artifacts (screenshot/note) under `docs/qa/bug_reports/`,
     - failure must show user-visible error feedback and be treated as QA fail.
 - When adding tests later, use a `tests/` root and mirror feature folders (for example, `tests/battle/`).
 
@@ -104,7 +104,7 @@
   - planning docs must explicitly separate fixed vs variable items and include a decision log for changes.
   - planning docs must include cover and table-of-contents sections for readability.
   - planning docs should declare frame type at the top: Frame A (content-first) or Frame B (mechanics/tech-first).
-  - scenario-heavy projects should include a four-act synopsis block (ê¸°/ìŠ¹/ì „/ê²°).
+  - scenario-heavy projects should include a four-act synopsis block (±â/½Â/Àü/°á).
   - battle and skill systems should include programmer handoff specs (flow, rules, variables, exceptions, tech requirements).
   - skill docs should include animation/VFX/SFX timing guides.
   - map-heavy plans should include map overview, connection graph, legend/icons, map parameters, region background settings, and landmark tables.

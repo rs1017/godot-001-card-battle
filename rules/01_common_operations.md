@@ -22,9 +22,9 @@
 - 이미지 파일은 로컬 저장 후 상대 경로로 연결
 
 ## Runtime Log Storage Policy
-- Store runtime logs under `gamelogs/`.
-- Full stream file: `gamelogs/godot-live.log`.
-- Error-only file: `gamelogs/godot-errors.log` (lines beginning with `ERROR:`).
+- Store runtime logs under `docs/qa/bug_reports/`.
+- Full stream file: `docs/qa/bug_reports/godot-live.log`.
+- Error-only file: `docs/qa/bug_reports/godot-errors.log` (lines beginning with `ERROR:`).
 
 ## Runtime Error Fix Policy
 - If runtime `ERROR:` lines are logged, treat them as actionable defects in the same task cycle.
