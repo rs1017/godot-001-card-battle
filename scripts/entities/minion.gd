@@ -122,14 +122,19 @@ func _load_model() -> void:
 
 
 func _load_model_scene(path: String) -> Node3D:
-	var scene: PackedScene = load(path) as PackedScene
-	if scene:
-		return scene.instantiate()
 	if path.ends_with(".glb") or path.ends_with(".gltf"):
 		var doc: GLTFDocument = GLTFDocument.new()
 		var state: GLTFState = GLTFState.new()
-		if doc.append_from_file(path, state) == OK:
+		var abs_path: String = ProjectSettings.globalize_path(path)
+		if doc.append_from_file(abs_path, state) == OK:
 			return doc.generate_scene(state) as Node3D
+	var resource: Resource = load(path)
+	if resource is PackedScene:
+		return (resource as PackedScene).instantiate()
+	if resource is Mesh:
+		var mesh_node: MeshInstance3D = MeshInstance3D.new()
+		mesh_node.mesh = resource as Mesh
+		return mesh_node
 	return null
 
 

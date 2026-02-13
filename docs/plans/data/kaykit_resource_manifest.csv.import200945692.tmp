@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://7pyxjeymougv"
+
+[deps]
+
+files=["res://docs/plans/data/kaykit_resource_manifest.ext.translation", "res://docs/plans/data/kaykit_resource_manifest.size.translation"]
+
+source_file="res://docs/plans/data/kaykit_resource_manifest.csv"
+dest_files=["res://docs/plans/data/kaykit_resource_manifest.ext.translation", "res://docs/plans/data/kaykit_resource_manifest.size.translation"]
+
+[params]
+
+compress=true
+delimiter=0

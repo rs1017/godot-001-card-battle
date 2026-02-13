@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b2fwovl7ei4ff"
+
+[deps]
+
+files=["res://docs/plans/data/page_image_slot_mapping.image.translation"]
+
+source_file="res://docs/plans/data/page_image_slot_mapping.csv"
+dest_files=["res://docs/plans/data/page_image_slot_mapping.image.translation"]
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://l6h5lndx4pw2"
+
+[deps]
+
+files=["res://docs/plans/data/master_plan_pages.theme.translation", "res://docs/plans/data/master_plan_pages.dev.translation", "res://docs/plans/data/master_plan_pages.ui.translation", "res://docs/plans/data/master_plan_pages.formula.translation", "res://docs/plans/data/master_plan_pages.image.translation", "res://docs/plans/data/master_plan_pages.image.translation"]
+
+source_file="res://docs/plans/data/master_plan_pages.csv"
+dest_files=["res://docs/plans/data/master_plan_pages.theme.translation", "res://docs/plans/data/master_plan_pages.dev.translation", "res://docs/plans/data/master_plan_pages.ui.translation", "res://docs/plans/data/master_plan_pages.formula.translation", "res://docs/plans/data/master_plan_pages.image.translation", "res://docs/plans/data/master_plan_pages.image.translation"]
+
+[params]
+
+compress=true
+delimiter=0

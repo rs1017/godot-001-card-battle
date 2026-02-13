@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c7edpr7w2ywxx"
+
+[deps]
+
+files=["res://docs/plans/data/feature_dependency_matrix_v1.downstream.translation", "res://docs/plans/data/feature_dependency_matrix_v1.dependency.translation", "res://docs/plans/data/feature_dependency_matrix_v1.block.translation", "res://docs/plans/data/feature_dependency_matrix_v1.owner.translation"]
+
+source_file="res://docs/plans/data/feature_dependency_matrix_v1.csv"
+dest_files=["res://docs/plans/data/feature_dependency_matrix_v1.downstream.translation", "res://docs/plans/data/feature_dependency_matrix_v1.dependency.translation", "res://docs/plans/data/feature_dependency_matrix_v1.block.translation", "res://docs/plans/data/feature_dependency_matrix_v1.owner.translation"]
+
+[params]
+
+compress=true
+delimiter=0

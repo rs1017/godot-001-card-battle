@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://o2byqicxac6s"
+
+[deps]
+
+files=["res://docs/plans/data/asset_production_list_v1.category.translation", "res://docs/plans/data/asset_production_list_v1.asset.translation", "res://docs/plans/data/asset_production_list_v1.spec.translation", "res://docs/plans/data/asset_production_list_v1.format.translation", "res://docs/plans/data/asset_production_list_v1.target.translation", "res://docs/plans/data/asset_production_list_v1.priority.translation", "res://docs/plans/data/asset_production_list_v1.owner.translation", "res://docs/plans/data/asset_production_list_v1.acceptance.translation"]
+
+source_file="res://docs/plans/data/asset_production_list_v1.csv"
+dest_files=["res://docs/plans/data/asset_production_list_v1.category.translation", "res://docs/plans/data/asset_production_list_v1.asset.translation", "res://docs/plans/data/asset_production_list_v1.spec.translation", "res://docs/plans/data/asset_production_list_v1.format.translation", "res://docs/plans/data/asset_production_list_v1.target.translation", "res://docs/plans/data/asset_production_list_v1.priority.translation", "res://docs/plans/data/asset_production_list_v1.owner.translation", "res://docs/plans/data/asset_production_list_v1.acceptance.translation"]
+
+[params]
+
+compress=true
+delimiter=0

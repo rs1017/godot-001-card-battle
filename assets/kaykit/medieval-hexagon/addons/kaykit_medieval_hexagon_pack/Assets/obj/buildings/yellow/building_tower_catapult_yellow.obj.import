@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://pct57vibeqhg"
+path="res://.godot/imported/building_tower_catapult_yellow.obj-20f86d7a47005ea008a2c21e6cb2494a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/building_tower_catapult_yellow.obj-20f86d7a47005ea008a2c21e6cb2494a.mesh"]
+
+source_file="res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/obj/buildings/yellow/building_tower_catapult_yellow.obj"
+dest_files=["res://.godot/imported/building_tower_catapult_yellow.obj-20f86d7a47005ea008a2c21e6cb2494a.mesh", "res://.godot/imported/building_tower_catapult_yellow.obj-20f86d7a47005ea008a2c21e6cb2494a.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

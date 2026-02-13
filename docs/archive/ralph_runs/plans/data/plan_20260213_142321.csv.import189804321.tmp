@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://mftxxlrue81w"
+
+[deps]
+
+files=["res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.reference.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.phase.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.owner.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.status.translation"]
+
+source_file="res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.csv"
+dest_files=["res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.reference.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.phase.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.owner.translation", "res://docs/archive/ralph_runs/plans/data/plan_20260213_142321.status.translation"]
+
+[params]
+
+compress=true
+delimiter=0

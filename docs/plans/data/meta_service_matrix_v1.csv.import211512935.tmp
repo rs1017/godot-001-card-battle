@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bkgb6jcyaefle"
+
+[deps]
+
+files=["res://docs/plans/data/meta_service_matrix_v1.service.translation", "res://docs/plans/data/meta_service_matrix_v1.main.translation", "res://docs/plans/data/meta_service_matrix_v1.state.translation", "res://docs/plans/data/meta_service_matrix_v1.acceptance.translation"]
+
+source_file="res://docs/plans/data/meta_service_matrix_v1.csv"
+dest_files=["res://docs/plans/data/meta_service_matrix_v1.service.translation", "res://docs/plans/data/meta_service_matrix_v1.main.translation", "res://docs/plans/data/meta_service_matrix_v1.state.translation", "res://docs/plans/data/meta_service_matrix_v1.acceptance.translation"]
+
+[params]
+
+compress=true
+delimiter=0

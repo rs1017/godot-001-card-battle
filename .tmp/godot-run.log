@@ -1,0 +1,350 @@
+Godot Engine v4.5.1.stable.mono.official.f62fdbde1 - https://godotengine.org
+ERROR: Can't create shader cache folder, no shader caching will happen: user://
+   at: RasterizerGLES3 (drivers/gles3/rasterizer_gles3.cpp:335)
+OpenGL API 3.3.0 Core Profile Context 22.20.44.24.221223 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon(TM) Graphics
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2548)
+[BugReporter] Save dir selected: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+[GameManager] State: MAIN_MENU -> MAIN_MENU
+ERROR: Cannot open file 'res://.godot/imported/building_castle_blue.fbx-682f78715820d6de9a2cda1e1d530d44.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://.godot/imported/building_castle_blue.fbx-682f78715820d6de9a2cda1e1d530d44.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/buildings/blue/building_castle_blue.fbx.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Cannot open file 'res://.godot/imported/building_castle_red.fbx-455e9106e3cfc02c0078cef7a00d8b2c.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://.godot/imported/building_castle_red.fbx-455e9106e3cfc02c0078cef7a00d8b2c.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+ERROR: Failed loading resource: res://assets/kaykit/medieval-hexagon/buildings/red/building_castle_red.fbx.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/tower.gd:69)
+       [1] _load_model (res://scripts/entities/tower.gd:59)
+       [2] _ready (res://scripts/entities/tower.gd:43)
+[GameManager] State: MAIN_MENU -> BATTLE_PLAYING
+[MatchManager] Match started!
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Warrior.glb-86af331ba9fee3cd1b3b2fcb051d0245.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Warrior.glb-86af331ba9fee3cd1b3b2fcb051d0245.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Warrior.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Warrior on lane 0
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Warrior.glb-86af331ba9fee3cd1b3b2fcb051d0245.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Warrior.glb-86af331ba9fee3cd1b3b2fcb051d0245.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Warrior.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Warrior on lane 0
+[AI] Playing Skeleton Warrior on lane 0 (Mana: 1.2)
+
+[BugReporter] === BUG REPORT #1 ===
+  #01 Left Lane
+  #02 Right Lane
+  #03 River (Center)
+  #04 Player Territory
+  #05 Enemy Territory
+  #06 Player Tower (HP: 2000/2000)
+  #07 Enemy Tower (HP: 2000/2000)
+  #08 Enemy Skeleton Warrior (HP: 180/180)
+  #09 Enemy Skeleton Warrior (HP: 180/180)
+  #10 Player HP Label
+  #11 Timer
+  #12 Enemy HP Label
+  #13 Mana Bar: 5/10
+[BugReporter] Save directory: C:/github/godot-game/godot-001-card-battle/docs/qa/bug_reports
+
+[GameManager] State: BATTLE_PLAYING -> BATTLE_PAUSED
+[GameManager] State: BATTLE_PAUSED -> BATTLE_PLAYING
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+[AI] Playing Skeleton Minion on lane 1 (Mana: 0.1)
+[GameManager] State: BATTLE_PLAYING -> BATTLE_PAUSED
+[GameManager] State: BATTLE_PAUSED -> BATTLE_PLAYING
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+[AI] Playing Skeleton Minion on lane 1 (Mana: 0.0)
+[GameManager] State: BATTLE_PLAYING -> BATTLE_PAUSED
+[GameManager] State: BATTLE_PAUSED -> BATTLE_PLAYING
+[AI] Playing Skeleton Bolt on lane 1 (Mana: 0.3)
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:421)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+ERROR: Cannot open file 'res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn'.
+   at: load (core/io/resource_format_binary.cpp:1220)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://.godot/imported/Skeleton_Minion.glb-0547b2f020202fbe0af8ee828e6fe0a1.scn.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+ERROR: Failed loading resource: res://assets/kaykit/skeletons/Skeleton_Minion.glb.
+   at: _load (core/io/resource_loader.cpp:343)
+   GDScript backtrace (most recent call first):
+       [0] _load_model_scene (res://scripts/entities/minion.gd:125)
+       [1] _load_model (res://scripts/entities/minion.gd:97)
+       [2] setup (res://scripts/entities/minion.gd:67)
+       [3] spawn_enemy_minion (res://scripts/battle/match_manager.gd:209)
+       [4] _resolve_enemy_card (res://scripts/battle/match_manager.gd:422)
+       [5] _on_ai_play_card (res://scripts/battle/match_manager.gd:216)
+       [6] _try_play_card (res://scripts/battle/ai_opponent.gd:69)
+       [7] _process (res://scripts/battle/ai_opponent.gd:54)
+[MatchManager] Enemy spawned Skeleton Minion on lane 1
+[AI] Playing Skeleton Minion on lane 1 (Mana: 0.1)
+[AI] Playing Skeleton Bolt on lane 0 (Mana: 0.1)
+[GameManager] State: BATTLE_PLAYING -> GAME_OVER
+[MatchManager] Match ended! Player won: false

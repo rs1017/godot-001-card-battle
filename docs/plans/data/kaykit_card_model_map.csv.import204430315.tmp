@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ccm0v43o167sq"
+
+[deps]
+
+files=["res://docs/plans/data/kaykit_card_model_map.card.translation", "res://docs/plans/data/kaykit_card_model_map.kaykit.translation", "res://docs/plans/data/kaykit_card_model_map.model.translation"]
+
+source_file="res://docs/plans/data/kaykit_card_model_map.csv"
+dest_files=["res://docs/plans/data/kaykit_card_model_map.card.translation", "res://docs/plans/data/kaykit_card_model_map.kaykit.translation", "res://docs/plans/data/kaykit_card_model_map.model.translation"]
+
+[params]
+
+compress=true
+delimiter=0

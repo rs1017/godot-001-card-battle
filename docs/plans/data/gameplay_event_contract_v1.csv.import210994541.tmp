@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bpevvg7ws6am0"
+
+[deps]
+
+files=["res://docs/plans/data/gameplay_event_contract_v1.publisher.translation", "res://docs/plans/data/gameplay_event_contract_v1.subscribers.translation", "res://docs/plans/data/gameplay_event_contract_v1.payload.translation", "res://docs/plans/data/gameplay_event_contract_v1.reliability.translation", "res://docs/plans/data/gameplay_event_contract_v1.notes.translation"]
+
+source_file="res://docs/plans/data/gameplay_event_contract_v1.csv"
+dest_files=["res://docs/plans/data/gameplay_event_contract_v1.publisher.translation", "res://docs/plans/data/gameplay_event_contract_v1.subscribers.translation", "res://docs/plans/data/gameplay_event_contract_v1.payload.translation", "res://docs/plans/data/gameplay_event_contract_v1.reliability.translation", "res://docs/plans/data/gameplay_event_contract_v1.notes.translation"]
+
+[params]
+
+compress=true
+delimiter=0

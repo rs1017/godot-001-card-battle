@@ -134,29 +134,39 @@ func _build_toolbar() -> void:
 
 	_toolbar.add_child(_create_toolbar_button("Save Full", _on_save_full))
 	_toolbar.add_child(_create_toolbar_button("Crop Select", _on_crop_select))
-	_toolbar.add_child(_create_toolbar_button("Save Note", _on_save_note))
+	_toolbar.add_child(_create_toolbar_button("Send", _on_send))
 	_toolbar.add_child(_create_toolbar_button("Close", _on_close))
 
 
 func _build_report_panel() -> void:
 	_report_panel = PanelContainer.new()
-	_report_panel.anchor_left = 0.02
-	_report_panel.anchor_right = 0.46
-	_report_panel.anchor_top = 0.04
-	_report_panel.anchor_bottom = 0.9
+	_report_panel.anchor_left = 0.2
+	_report_panel.anchor_right = 0.8
+	_report_panel.anchor_top = 0.12
+	_report_panel.anchor_bottom = 0.86
 	_report_panel.mouse_filter = Control.MOUSE_FILTER_STOP
 	_report_panel.visible = false
 
 	var panel_style: StyleBoxFlat = StyleBoxFlat.new()
-	panel_style.bg_color = Color(0.06, 0.06, 0.08, 0.95)
-	panel_style.corner_radius_top_left = 8
-	panel_style.corner_radius_top_right = 8
-	panel_style.corner_radius_bottom_left = 8
-	panel_style.corner_radius_bottom_right = 8
+	panel_style.bg_color = Color(0.05, 0.05, 0.08, 0.82)
+	panel_style.corner_radius_top_left = 14
+	panel_style.corner_radius_top_right = 14
+	panel_style.corner_radius_bottom_left = 14
+	panel_style.corner_radius_bottom_right = 14
+	panel_style.border_width_left = 2
+	panel_style.border_width_top = 2
+	panel_style.border_width_right = 2
+	panel_style.border_width_bottom = 2
+	panel_style.border_color = Color(1, 1, 1, 0.25)
 	_report_panel.add_theme_stylebox_override("panel", panel_style)
 	_overlay_container.add_child(_report_panel)
 
 	var vbox: VBoxContainer = VBoxContainer.new()
+	vbox.set_anchors_preset(Control.PRESET_FULL_RECT)
+	vbox.offset_left = 16
+	vbox.offset_top = 14
+	vbox.offset_right = -16
+	vbox.offset_bottom = -14
 	vbox.add_theme_constant_override("separation", 8)
 	_report_panel.add_child(vbox)
 
@@ -166,9 +176,10 @@ func _build_report_panel() -> void:
 	vbox.add_child(title)
 
 	_preview_rect = TextureRect.new()
-	_preview_rect.custom_minimum_size = Vector2(640, 320)
+	_preview_rect.custom_minimum_size = Vector2(700, 300)
 	_preview_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	_preview_rect.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	_preview_rect.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	_preview_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	vbox.add_child(_preview_rect)
 
@@ -180,7 +191,9 @@ func _build_report_panel() -> void:
 	vbox.add_child(_badge_list_label)
 
 	_note_input = TextEdit.new()
-	_note_input.custom_minimum_size = Vector2(640, 120)
+	_note_input.custom_minimum_size = Vector2(700, 140)
+	_note_input.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	_note_input.add_theme_font_size_override("font_size", 16)
 	_note_input.placeholder_text = "재현 스텝/기대 결과/실제 결과를 입력하세요"
 	_note_input.wrap_mode = TextEdit.LINE_WRAPPING_BOUNDARY
 	vbox.add_child(_note_input)
@@ -581,6 +594,15 @@ func _on_save_note() -> void:
 	f.store_string(_note_input.text)
 	f.close()
 	print("[BugReporter] Note saved: %s" % save_paths["abs"])
+
+
+func _on_send() -> void:
+	var image_path: String = _save_screenshot(true)
+	_on_save_note()
+	if image_path.is_empty():
+		push_warning("[BugReporter] Send failed: screenshot not saved")
+		return
+	print("[BugReporter] Sent report (local save): %s" % image_path)
 
 
 func _on_close() -> void:

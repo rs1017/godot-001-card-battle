@@ -1,96 +1,95 @@
-﻿extends Node3D
-## Arena visual generator.
+extends Node3D
+## Arena visuals built from KayKit assets with GLTF runtime fallback.
+
+const TILE_PATH: String = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/base/hex_grass.gltf"
+const ROAD_PATH: String = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/roads/hex_road_A.gltf"
+const RIVER_PATH: String = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/tiles/rivers/hex_river_crossing_A.gltf"
+const BRIDGE_PATH: String = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/buildings/neutral/building_bridge_A.gltf"
+const BACK_MOUNTAIN_PATH: String = "res://assets/kaykit/medieval-hexagon/addons/kaykit_medieval_hexagon_pack/Assets/gltf/decoration/nature/mountain_C_grass.gltf"
+
+const TILE_SCALE: Vector3 = Vector3(2.35, 2.35, 2.35)
+const BRIDGE_SCALE: Vector3 = Vector3(1.8, 1.8, 1.8)
+const MOUNTAIN_SCALE: Vector3 = Vector3(2.8, 2.8, 2.8)
+const GRID_X: Array[int] = [-9, -6, -3, 0, 3, 6, 9]
+const GRID_Z: Array[int] = [-12, -9, -6, -3, 0, 3, 6, 9, 12]
 
 
 func _ready() -> void:
-	_create_lane_paths()
-	_create_river()
-	_create_territory_lines()
-	_create_side_walls()
+	_hide_legacy_floor()
+	_build_ground()
+	_build_river()
+	_build_roads()
+	_build_bridges()
+	_build_backdrop()
 
 
-func _create_lane_paths() -> void:
-	_create_lane_strip(Vector3(-3, 0.01, 0), Vector3(1.5, 0.05, 22), Color(0.45, 0.4, 0.35, 0.6))
-	_create_lane_strip(Vector3(3, 0.01, 0), Vector3(1.5, 0.05, 22), Color(0.45, 0.4, 0.35, 0.6))
+func _hide_legacy_floor() -> void:
+	var floor_mesh: Node3D = get_node_or_null("../ArenaFloor/FloorMesh")
+	if floor_mesh:
+		floor_mesh.visible = false
 
 
-func _create_lane_strip(pos: Vector3, size: Vector3, color: Color) -> void:
+func _build_ground() -> void:
+	for z in GRID_Z:
+		for x in GRID_X:
+			_add_asset(TILE_PATH, Vector3(float(x), -0.02, float(z)), TILE_SCALE)
+
+
+func _build_river() -> void:
+	for x in GRID_X:
+		_add_asset(RIVER_PATH, Vector3(float(x), 0.0, 0.0), TILE_SCALE)
+
+
+func _build_roads() -> void:
+	for z in GRID_Z:
+		_add_asset(ROAD_PATH, Vector3(-3.0, 0.01, float(z)), TILE_SCALE)
+		_add_asset(ROAD_PATH, Vector3(3.0, 0.01, float(z)), TILE_SCALE)
+
+
+func _build_bridges() -> void:
+	_add_asset(BRIDGE_PATH, Vector3(-3.0, 0.02, 0.0), BRIDGE_SCALE)
+	_add_asset(BRIDGE_PATH, Vector3(3.0, 0.02, 0.0), BRIDGE_SCALE)
+
+
+func _build_backdrop() -> void:
+	_add_asset(BACK_MOUNTAIN_PATH, Vector3(-7.0, 0.0, -14.5), MOUNTAIN_SCALE, 0.0)
+	_add_asset(BACK_MOUNTAIN_PATH, Vector3(7.0, 0.0, 14.5), MOUNTAIN_SCALE, 180.0)
+
+
+func _add_asset(path: String, position: Vector3, scale_value: Vector3, rot_y_deg: float = 0.0) -> void:
+	var node: Node3D = _load_model_scene(path)
+	if not node:
+		node = _create_fallback_tile(path)
+	add_child(node)
+	node.position = position
+	node.scale = scale_value
+	node.rotation_degrees.y = rot_y_deg
+
+
+func _load_model_scene(path: String) -> Node3D:
+	var scene: PackedScene = load(path) as PackedScene
+	if scene:
+		return scene.instantiate()
+	if path.ends_with(".gltf") or path.ends_with(".glb"):
+		var doc: GLTFDocument = GLTFDocument.new()
+		var state: GLTFState = GLTFState.new()
+		var abs_path: String = ProjectSettings.globalize_path(path)
+		if doc.append_from_file(abs_path, state) == OK:
+			return doc.generate_scene(state) as Node3D
+	return null
+
+
+func _create_fallback_tile(path: String) -> Node3D:
 	var mesh_instance: MeshInstance3D = MeshInstance3D.new()
-	var box_mesh: BoxMesh = BoxMesh.new()
-	box_mesh.size = size
-	mesh_instance.mesh = box_mesh
-
-	var mat: StandardMaterial3D = StandardMaterial3D.new()
-	mat.albedo_color = color
-	mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	mesh_instance.material_override = mat
-	mesh_instance.position = pos
-	add_child(mesh_instance)
-
-
-func _create_river() -> void:
-	var river: MeshInstance3D = MeshInstance3D.new()
 	var box: BoxMesh = BoxMesh.new()
-	box.size = Vector3(20, 0.08, 1.5)
-	river.mesh = box
-
-	var mat: StandardMaterial3D = StandardMaterial3D.new()
-	mat.albedo_color = Color(0.2, 0.4, 0.7, 0.7)
-	mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	river.material_override = mat
-	river.position = Vector3(0, 0.02, 0)
-	add_child(river)
-
-	_create_bridge(Vector3(-3, 0.05, 0))
-	_create_bridge(Vector3(3, 0.05, 0))
-
-
-func _create_bridge(pos: Vector3) -> void:
-	var bridge: MeshInstance3D = MeshInstance3D.new()
-	var box: BoxMesh = BoxMesh.new()
-	box.size = Vector3(2.0, 0.15, 2.0)
-	bridge.mesh = box
-
-	var mat: StandardMaterial3D = StandardMaterial3D.new()
-	mat.albedo_color = Color(0.55, 0.4, 0.25)
-	bridge.material_override = mat
-	bridge.position = pos
-	add_child(bridge)
-
-
-func _create_territory_lines() -> void:
-	_create_line(Vector3(0, 0.02, 6), Vector3(20, 0.02, 0.1), Color(0.3, 0.5, 0.9, 0.4))
-	_create_line(Vector3(0, 0.02, -6), Vector3(20, 0.02, 0.1), Color(0.9, 0.3, 0.3, 0.4))
-
-
-func _create_line(pos: Vector3, size: Vector3, color: Color) -> void:
-	var mesh_instance: MeshInstance3D = MeshInstance3D.new()
-	var box: BoxMesh = BoxMesh.new()
-	box.size = size
+	box.size = Vector3(2.4, 0.12, 2.4)
 	mesh_instance.mesh = box
-
 	var mat: StandardMaterial3D = StandardMaterial3D.new()
-	mat.albedo_color = color
-	mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+	if path.find("river") >= 0:
+		mat.albedo_color = Color(0.18, 0.4, 0.75, 1.0)
+	elif path.find("road") >= 0:
+		mat.albedo_color = Color(0.45, 0.38, 0.25, 1.0)
+	else:
+		mat.albedo_color = Color(0.33, 0.56, 0.29, 1.0)
 	mesh_instance.material_override = mat
-	mesh_instance.position = pos
-	add_child(mesh_instance)
-
-
-func _create_side_walls() -> void:
-	_create_wall_strip(Vector3(-9, 0.3, 0), Vector3(0.3, 0.6, 24), Color(0.3, 0.3, 0.3, 0.3))
-	_create_wall_strip(Vector3(9, 0.3, 0), Vector3(0.3, 0.6, 24), Color(0.3, 0.3, 0.3, 0.3))
-
-
-func _create_wall_strip(pos: Vector3, size: Vector3, color: Color) -> void:
-	var mesh_instance: MeshInstance3D = MeshInstance3D.new()
-	var box: BoxMesh = BoxMesh.new()
-	box.size = size
-	mesh_instance.mesh = box
-
-	var mat: StandardMaterial3D = StandardMaterial3D.new()
-	mat.albedo_color = color
-	mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
-	mesh_instance.material_override = mat
-	mesh_instance.position = pos
-	add_child(mesh_instance)
+	return mesh_instance

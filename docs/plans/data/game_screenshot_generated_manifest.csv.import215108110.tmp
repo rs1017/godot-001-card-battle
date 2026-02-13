@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d388gm3aw5n8o"
+
+[deps]
+
+files=["res://docs/plans/data/game_screenshot_generated_manifest.source.translation", "res://docs/plans/data/game_screenshot_generated_manifest.prompt.translation", "res://docs/plans/data/game_screenshot_generated_manifest.seed.translation", "res://docs/plans/data/game_screenshot_generated_manifest.local.translation", "res://docs/plans/data/game_screenshot_generated_manifest.sha1.translation", "res://docs/plans/data/game_screenshot_generated_manifest.bytes.translation"]
+
+source_file="res://docs/plans/data/game_screenshot_generated_manifest.csv"
+dest_files=["res://docs/plans/data/game_screenshot_generated_manifest.source.translation", "res://docs/plans/data/game_screenshot_generated_manifest.prompt.translation", "res://docs/plans/data/game_screenshot_generated_manifest.seed.translation", "res://docs/plans/data/game_screenshot_generated_manifest.local.translation", "res://docs/plans/data/game_screenshot_generated_manifest.sha1.translation", "res://docs/plans/data/game_screenshot_generated_manifest.bytes.translation"]
+
+[params]
+
+compress=true
+delimiter=0
